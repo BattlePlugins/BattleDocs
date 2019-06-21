@@ -39,15 +39,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {page: 'index', label: 'Get'},
+    {href: "https://battleplugins.org/blog", label: "Blog"},
+    {href: "https://battleplugins.org/get", label: "Get"},
     {doc: 'index', label: 'Docs'},
-    {doc: 'ba/index', label: 'BA'},
-    {doc: 'bt/index', label: 'BT'},
-    {doc: 'dev/index', label: 'Dev'},
-  //  {blog: false, label: 'Blog'},
     {href: "https://github.com/battleplugins", label: "GitHub"},
     {search: true}
-
   ],
 
   // If you have users set above, you add it here:
