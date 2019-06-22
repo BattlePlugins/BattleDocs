@@ -14,7 +14,11 @@ Examples:
 * `color=<red>,<green>,<blue>`
 * `lore="<line1>\n<line2>"`
 * `displayName="<string>"`
-* [[Enchantments|Valid Item Enchants]]
+* `owner="<string>"` (Only works for heads)
+* `modelData="<custom model data>"` (Only works in 1.14+, see [Custom Items](https://minecraft.gamepedia.com/User:Aeldrion/Tutorials/Custom_items))
+* `unbreakable="<true/false>"`
+* `effects="<effect 1> <effect 2> <effect...x>"` (See [potions](potions.md))
+* [Valid Item Enchantments](enchants.md)
 
 ## Config Example
 Inserting an item with giveClass inside of the Game configs. In this example it's being done onSpawn, but it can be done anywhere.
