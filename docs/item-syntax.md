@@ -8,7 +8,7 @@ For yaml files that allow you to specify items. To add a new item you must add a
 * `- itemName: [options] <quantity>`
 Examples:
 * `- diamond_sword: sharp:5 knockback:3 fire:1 lore="Uber Sword!" 1`
-* `- leather_helm: lore="My Helm Keeps Me Safe" color=255,255,255 1`
+* `- leather_helmet: lore="My Helm Keeps Me Safe" color=255,255,255 1`
 
 ## Options
 * `color=<red>,<green>,<blue>`
