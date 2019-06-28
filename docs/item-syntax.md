@@ -3,17 +3,16 @@ id: item-syntax
 title: Item Syntax
 sidebar_label: Item Syntax
 ---
-
 For yaml files that allow you to specify items. To add a new item you must add a new element to the list. Colors are RGB format with values from 0-255.
 
 - `- itemName: [options] <quantity>`
 
-Examples:
+## Examples
 
 - `- diamond_sword: sharp:5 knockback:3 fire:1 lore="Uber Sword!" 1`
 - `- leather_helmet: lore="My Helm Keeps Me Safe" color=255,255,255 1`
 
-# Options
+## Options
 
 - `color=<red>,<green>,<blue>`
 - `lore="<line1>\n<line2>"`
@@ -24,7 +23,7 @@ Examples:
 - `effects="<effect 1> <effect 2> <effect...x>"` (See [Potions](potions.md))
 - `<name>:<power>`(See [Enchantments](enchants.md))
 
-# Config Example
+## Config Example
 
 Inserting an item with giveClass inside of the Game configs. In this example it's being done onSpawn, but it can be done anywhere.
 

@@ -3,18 +3,18 @@ id: enchants
 title: Enchantment Info
 ---
 
-# Item Enchants
+## Item Enchants
 
 Valid formats are
 
 - `<name>`
 - `<name>:<power>`
 
-# Example
+### Example
 
 - `- diamond_sword sharp:3 fire:2 1` ( give 1 diamond sword with sharpness 3 and fire 2)
 
-# Enchant Table
+## Enchant Table
 
 Enchant ID | Plugin Abbr.          | Minecraft Name        | Bukkit API Class         | Max Level | Description
 ---------- | --------------------- | --------------------- | ------------------------ | --------- | -----------------------------------------------------------------------------
@@ -49,7 +49,7 @@ Enchant ID | Plugin Abbr.          | Minecraft Name        | Bukkit API Class   
 70         | mending               | Mending               | MENDING                  | 1         | Repairs items when xp is gathered
 71         | vanishing_curse       | Curse of Vanishing    | VANISHING_CURSE          | 1         | Removes the enchanted item on death
 
-# 1.13+ Enchants
+## 1.13+ Enchants
 
 These enchantments currently have no ID as they were added in 1.13+ which removed the usage of IDs. Due to how the enchantment system is built in BattleArena, there is still support for using enchantment IDs for the enchants that have them.
 
