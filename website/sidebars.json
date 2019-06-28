@@ -10,13 +10,13 @@
         {
           "type": "subcategory",
           "label": "Test Sub 3",
-          "ids": ["guidelines", "examples", "templates"]
+          "ids": ["enchants", "potions", "item-syntax"]
         },
         "ba/index",
         {
           "type": "subcategory",
-          "label": "Test Sub 2",
-          "ids": ["guidelines", "examples", "templates"]
+          "label": "Test Sub 4",
+          "ids": ["ba/getting-started", "ba/faq", "ba/changelog"]
         }
     ]
   }
