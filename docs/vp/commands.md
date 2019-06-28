@@ -1,10 +1,14 @@
 ---
-id: changelog
+id: commands
 title: VirtualPlayers Commands
 sidebar_label: Commands
 ---
 
-# Commands as Players
+# VirtualPlayers Commands
+
+All currently documented commands for VirtualPlayers.
+
+## Player Commands
 
 command                                                 | description
 :------------------------------------------------------ | :---------------------------------------------------------------
@@ -24,20 +28,19 @@ command                                                 | description
 `dc <virtual player> interact <left, right> <location>` | do a PlayerInteractEvent on the specified block location
 `/dc <virtual player> bpe <block> <location>`           | do a BlockPlaceEvent of the given material at the given location
 `/dc <virtual player> bbe <location>`                   | do a BlockBreakEvent at the given location
+`/dc <virtual player=""> pie</virtual>`                 | Trigger a PlayerPickupItemEvent
 
-`/dc
-
-<virtual player=""> pie</virtual>
-
-| Trigger a PlayerPickupItemEvent
-
-# Other Commands
+## Admin / Misc Commands
 
 command                        | description
 :----------------------------- | :-------------------------
 `/virtualplayers hideMessages` | hide messages from players
 `/virtualplayers showMessages` | show messages from players
 
-Examples dc p1 spawn dc p1 chat Hello Server! dc p1 bpe iron_block world,311,75,400 : Place an iron_block at world,311,75,400 Virtual Players will print out to the console if they teleport, speak, receive a message, respawn, connect/reconnect.
+## Example
 
-I usually have a text file where I type out the commands I want to do with the players then just paste all of the actions into the console
+- `dc p1 spawn`
+- `dc p1 chat Hello Server!``
+- `dc p1 bpe iron_block world,311,75,400` : Place an iron_block at `world,311,75,400`
+
+Virtual Players will print out to the console if they teleport, speak, receive a message, respawn, connect/reconnect.

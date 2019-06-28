@@ -4,6 +4,8 @@ title: Wiki Markdown Examples
 sidebar_label: Examples
 ---
 
+> MARKDOWN EXAMPLE AND SYNTAX ON WIKI RENDERING
+
 # Remarkable
 
 > Experience real-time editing with Remarkable!
