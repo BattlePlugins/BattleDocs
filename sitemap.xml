@@ -74,6 +74,7 @@
 <url> <loc>https://docs.battleplugins.org/docs/potions</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/potions" /> </url>
 <url> <loc>https://docs.battleplugins.org/docs/templates</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/templates" /> </url>
 <url> <loc>https://docs.battleplugins.org/docs/vp/changelog</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/vp/changelog" /> </url>
+<url> <loc>https://docs.battleplugins.org/docs/vp/commands</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/vp/commands" /> </url>
 <url> <loc>https://docs.battleplugins.org/docs/vp/faq</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/vp/faq" /> </url>
 <url> <loc>https://docs.battleplugins.org/docs/vp/permissions</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/vp/permissions" /> </url>
 <url> <loc>https://docs.battleplugins.org/docs/vp/</loc> <changefreq>hourly</changefreq> <priority>1.0</priority> <xhtml:link rel="alternate" hreflang="en" href="https://docs.battleplugins.org/docs/vp/" /> </url>
