@@ -62,7 +62,7 @@ class Footer extends React.Component {
         </section>
 		<div>
 			<center>
-        <a href="https://github.com/BattlePlugins/battledocs" className="footer-social"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/battleplugins/battledocs.svg?style=social"/><a/> | <a href="https://github.com/BattlePlugins/battledocs" className="footer-social"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?label=Watch&style=social"/></a>
+        <a href="https://github.com/BattlePlugins/battledocs" className="footer-social"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/battleplugins/battledocs.svg?style=social"/></a> | <a href="https://github.com/BattlePlugins/battledocs" className="footer-social"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?label=Watch&style=social"/></a>
         <br></br>
 			     <h5 className="footer-slogan">Hosted By:</h5>
            <a href="https://cl6web.com" className="footer-slogan"><img src={`${this.props.config.baseUrl}img/cl6.png`} alt="CL6 Hosting" height="60"/></a>
