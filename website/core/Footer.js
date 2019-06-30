@@ -53,11 +53,11 @@ class Footer extends React.Component {
           </div>
           <div align="left">
             <h5>Site Stats:</h5>
-            <a href="https://battleplugins.org" className="footer-badge"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?color=brightgreen&label=Watching%20Repo%3A&logo=github&logoColor=white&style=flat-square"/></a>
-            <a href="https://battleplugins.org" className="footer-badge"><img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/battleplugins/battledocs.svg?color=brightgreen&label=Site%20Size&logo=github&logoColor=white&style=flat-square"/></a>
-            <a href="https://battleplugins.org" className="footer-badge"><img alt="Most Recent Commit" src="https://img.shields.io/github/last-commit/battleplugins/battledocs.svg?label=Last%20Update&logo=github&logoColor=white&style=flat-square"/></a>
-            <a href="https://battleplugins.org" className="footer-badge"><img alt="Jenkins Builds" src="https://img.shields.io/jenkins/build/https/ci.battleplugins.org/job/BattlePlugins/job/battledocs/job/master.svg?label=Build%20Status&logo=jenkins&logoColor=white&style=flat-square"/></a>
-            <a href="https://battleplugins.org" className="footer-badge"><img alt="Discord Server" src="https://img.shields.io/discord/305170628468801537.svg?color=brightgreen&label=Discord%20Server&logo=discord&logoColor=white&style=flat-square"/></a>
+            <a href="https://github.com/BattlePlugins/BattleDocs" className="footer-badge"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?color=brightgreen&label=Watching%20Repo%3A&logo=github&logoColor=white&style=flat-square"/></a>
+            <a href="https://github.com/BattlePlugins/BattleDocs" className="footer-badge"><img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/battleplugins/battledocs.svg?color=brightgreen&label=Site%20Size&logo=github&logoColor=white&style=flat-square"/></a>
+            <a href="https://github.com/BattlePlugins/BattleDocs" className="footer-badge"><img alt="Most Recent Commit" src="https://img.shields.io/github/last-commit/battleplugins/battledocs.svg?label=Last%20Update&logo=github&logoColor=white&style=flat-square"/></a>
+            <a href="https://ci.battleplugins.org/job/BattlePlugins/job/BattleDocs/" className="footer-badge"><img alt="Jenkins Builds" src="https://img.shields.io/jenkins/build/https/ci.battleplugins.org/job/BattlePlugins/job/BattleDocs/job/master.svg?label=Build%20Status&logo=jenkins&logoColor=white&style=flat-square"/></a>
+            <a href="https://discord.gg/J3Hjjb8" className="footer-badge"><img alt="Discord Server" src="https://img.shields.io/discord/305170628468801537.svg?color=brightgreen&label=Discord%20Server&logo=discord&logoColor=white&style=flat-square"/></a>
           </div>
         </section>
 		<div>
