@@ -99,10 +99,10 @@ These are the three different levels of dependencies that are built into BattleA
 
 | Plugin Dependency                                                                                                         | Support Provided / Features                                                    | Type |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---- |
-| [BattleTracker](https://www.spigotmc.org/resources/2165/)                                                                 | Sister plugin for stats and tracking in Arenas. Leaderboards and Sign support. | Rec  |
-| [WorldEdit](https://dev.bukkit.org/projects/worldedit)                                                                    | Arena Regeneration, Terrain Control, and Region Selections support.            | Rec |
-| [WorldGuard](https://dev.bukkit.org/projects/worldguard)                                                                  | Region Selection Support and Advanced Arena Region Flags intergration.         | Rec |
-| [VirtualPlayers](https://dev.bukkit.org/projects/virtualplayers2)                                                         | Support to use VirtualPlayers in Arenas for testing and experimentation!       | Soft |
+| **[BattleTracker](https://www.spigotmc.org/resources/2165/)**                                                                 | Sister plugin for stats and tracking in Arenas. Leaderboards and Sign support. | Rec  |
+| ++[WorldEdit](https://dev.bukkit.org/projects/worldedit)++                                                                    | Arena Regeneration, Terrain Control, and Region Selections support.            | Rec |
+| ++[WorldGuard](https://dev.bukkit.org/projects/worldguard)++                                                                  | Region Selection Support and Advanced Arena Region Flags intergration.         | Rec |
+| _[VirtualPlayers](https://dev.bukkit.org/projects/virtualplayers2)_                                                         | Support to use VirtualPlayers in Arenas for testing and experimentation!       | Soft |
 | [MobArena](https://www.spigotmc.org/resources/34110/)                                                                     | MobArena detection and protection, both in MobArenas and BA Arenas.            | Soft |
 | [NameTagEdit](https://www.spigotmc.org/resources/3836/)                                                                   | Update and Support for Custom and Colored Nametags within Arenas.              | Soft |
 | [VanishNoPacket](https://dev.bukkit.org/projects/vanish)                                                                  | "Unvanish after leaving an arena"                                              | Soft |
