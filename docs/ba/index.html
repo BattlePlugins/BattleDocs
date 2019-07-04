@@ -128,7 +128,7 @@
 <p>These are the three different levels of dependencies that are built into BattleArena:</p>
 <ul>
 <li><strong>Soft Dependencies</strong>: These are not required plugins, they'll hook into BattleArena if they're running compatible versions side by side to extend your experience.</li>
-<li><strong>Rec Dependencies</strong>: We strongly recommend running these along with BattleArena as they'll vastly expand BAs core features.</li>
+<li><strong>Rec Dependencies</strong>: These are recommended dependencies, we strongly recommend running these along with BattleArena as they'll vastly expand BAs core features.</li>
 <li><strong>Hard Dependencies</strong>: You need to run these side by side with BattleArena. Thankfully, we don't have any of those and don't plan too!</li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="dependencies"></a><a href="#dependencies" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dependencies</h3>
@@ -137,21 +137,21 @@
 <tr><th>Plugin Dependency</th><th>Support Provided / Features</th><th>Type</th></tr>
 </thead>
 <tbody>
-<tr><td><a href="https://www.spigotmc.org/resources/305/">Heroes Legacy</a> / [Heroes Premium <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>](<a href="https://www.spigotmc.org/resources/24734/">https://www.spigotmc.org/resources/24734/</a>)</td><td>Class Integrations and Proper Inventory Storing / Restoring Support.</td><td>Soft</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/combat-tag">CombatTag</a> / <a href="https://www.spigotmc.org/resources/4775/">CombatTagPlus</a></td><td>Combat Tag support and customization support within Arenas.</td><td>Soft</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/disguisecraft">DisguiseCraft</a> / <a href="https://www.spigotmc.org/resources/202/">LibsDisguises</a></td><td>Disguise support and customization support within Arenas.</td><td>Soft</td></tr>
+<tr><td><a href="https://www.spigotmc.org/resources/2165/">BattleTracker</a></td><td>Sister plugin for stats and tracking in Arenas. Leaderboards and Sign support.</td><td>Rec</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/worldedit">WorldEdit</a></td><td>Arena Regeneration, Terrain Control, and Region Selections support.</td><td>Rec</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/worldguard">WorldGuard</a></td><td>Region Selection Support and Advanced Arena Region Flags intergration.</td><td>Rec</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/virtualplayers2">VirtualPlayers</a></td><td>Support to use VirtualPlayers in Arenas for testing and experimentation!</td><td>Soft</td></tr>
 <tr><td><a href="https://www.spigotmc.org/resources/34110/">MobArena</a></td><td>MobArena detection and protection, both in MobArenas and BA Arenas.</td><td>Soft</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/essentials">Essentials</a> / <a href="https://www.spigotmc.org/resources/9089/">EssentialsX</a></td><td>God Mode (<code>/egod</code>) and <code>/back</code> command support within Arenas.</td><td>Soft</td></tr>
+<tr><td><a href="https://www.spigotmc.org/resources/3836/">NameTagEdit</a></td><td>Update and Support for Custom and Colored Nametags within Arenas.</td><td>Soft</td></tr>
 <tr><td><a href="https://dev.bukkit.org/projects/vanish">VanishNoPacket</a></td><td>&quot;Unvanish after leaving an arena&quot;</td><td>Soft</td></tr>
 <tr><td><a href="https://www.spigotmc.org/resources/34315/">Vault</a></td><td>Support for most popular economy plugins, provides money hook.</td><td>Soft</td></tr>
 <tr><td><a href="https://dev.bukkit.org/projects/multiverse-core">Multiverse</a></td><td>Multiworld support for Arenas.</td><td>Soft</td></tr>
-<tr><td><a href="https://www.spigotmc.org/resources/2165/">BattleTracker</a></td><td>Sister plugin for stats and tracking in Arenas. Leaderboards and Sign support.</td><td>Rec</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/herochat">Herochat</a> / [HeroChat Pro <sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1]</a></sup>](<a href="https://www.spigotmc.org/resources/34305/">https://www.spigotmc.org/resources/34305/</a>)</td><td>Support for Herochat chat and custom messaging.</td><td>Soft</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/worldedit">WorldEdit</a></td><td>Arena Regeneration, Terrain Control, and Region Selections support.</td><td>Soft</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/worldguard">WorldGuard</a></td><td>Region Selection Support and Advanced Arena Region Flags intergration.</td><td>Soft</td></tr>
-<tr><td>[mcMMO Classic <sup class="footnote-ref"><a href="#fn1" id="fnref1:2">[1]</a></sup>](<a href="https://www.spigotmc.org/resources/2445/">https://www.spigotmc.org/resources/2445/</a>) / [mcMMO Returns <sup class="footnote-ref"><a href="#fn1" id="fnref1:3">[1]</a></sup>](<a href="https://www.spigotmc.org/resources/64348/">https://www.spigotmc.org/resources/64348/</a>)</td><td>Support for skill force enabling / disabling in Arenas.</td><td>Soft</td></tr>
-<tr><td><a href="https://dev.bukkit.org/projects/virtualplayers2">VirtualPlayers</a></td><td>Support to use VirtualPlayers in Arenas for testing and experimentation!</td><td>Soft</td></tr>
-<tr><td><a href="https://www.spigotmc.org/resources/3836/">NameTagEdit</a></td><td>Update and Support for Custom and Colored Nametags within Arenas.</td><td>Soft</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/combat-tag">CombatTag</a> / <a href="https://www.spigotmc.org/resources/4775/">CombatTagPlus</a></td><td>Combat Tag support and customization support within Arenas.</td><td>Soft</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/disguisecraft">DisguiseCraft</a> / <a href="https://www.spigotmc.org/resources/202/">LibsDisguises</a></td><td>Disguise support and customization support within Arenas.</td><td>Soft</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/essentials">Essentials</a> / <a href="https://www.spigotmc.org/resources/9089/">EssentialsX</a></td><td>God Mode (<code>/egod</code>) and <code>/back</code> command support within Arenas.</td><td>Soft</td></tr>
+<tr><td><a href="https://dev.bukkit.org/projects/herochat">Herochat</a> / <a href="https://www.spigotmc.org/resources/34305/">HeroChat Pro</a><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></td><td>Support for Herochat chat and custom messaging.</td><td>Soft</td></tr>
+<tr><td><a href="https://www.spigotmc.org/resources/305/">Heroes Legacy</a> / <a href="https://www.spigotmc.org/resources/24734/">Heroes Premium</a><sup class="footnote-ref"><a href="#fn1" id="fnref1:1">[1]</a></sup></td><td>Class Integrations and Proper Inventory Storing / Restoring Support.</td><td>Soft</td></tr>
+<tr><td><a href="https://www.spigotmc.org/resources/2445/">mcMMO Classic</a><sup class="footnote-ref"><a href="#fn1" id="fnref1:2">[1]</a></sup> / <a href="https://www.spigotmc.org/resources/64348/">mcMMO Returns</a><sup class="footnote-ref"><a href="#fn1" id="fnref1:3">[1]</a></sup></td><td>Support for skill force enabling / disabling in Arenas.</td><td>Soft</td></tr>
 <tr><td><em>Example Plugin</em></td><td></td><td>Hard</td></tr>
 </tbody>
 </table>
