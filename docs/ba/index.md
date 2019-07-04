@@ -61,29 +61,29 @@ Here are most popular doc pages to read right now:
 2.  [Creating your first Arena](ba/arenas/simple.md)
 3.  [BattleArena FAQ](ba/faq.md)
 
-## Add-On Plugins/Extensions
+## Add-On Extensions
 
 BattleArena comes with support for developers to create their own BattleArena addons. These extensions allow you to go beyond what is currently able to be done in the plugin and allows for even more awesome games! Here is a list of a few extensions:
 
 **Official Extensions:**
 
--   ArenaSpleef
--   ArenaCTF
--   ArenaFutbol
--   ArenaParkour
--   ArenaPaintball
--   BombArena
--   HostageArena
+-   [ArenaSpleef](ext/ArenaSpleef/index.md)
+-   [ArenaParkour](ext/ArenaParkour/index.md)
+-   [ArenaPaintball](ext/ArenaPaintball/index.md)
+-   [ArenaCTF](ext/ArenaCTF/index.md)
+-   [ArenaFutbol](https://dev.bukkit.org/projects/arenafutbol)
+-   [BombArena](https://dev.bukkit.org/projects/bombarena)
+-   [HostageArena](https://dev.bukkit.org/projects/hostagearena)
 
 **Unofficial Extensions:**
 
--   ArenaTOW
--   ArenaBattleRoyale
--   ArenaTowerRush
+-   [ArenaTOW](https://www.spigotmc.org/resources/27337/)
+-   [ArenaBattleRoyale](https://www.spigotmc.org/resources/65557/)
+-   [ArenaTowerRush](https://github.com/RednedEpic/ArenaTowerRush)
 
-If you have an extension that you would like listed here, please \[[contact us]].
+If you have an extension that you would like listed here, please reach out on [Discord](https://discord.gg/tMVPVJf) or [Github](https://github.com/BattlePlugins).
 
-## Dependencies
+## Add-On Plugins
 
 These are all the dependencies that are currently built into BattleArena right now! We're always open for new suggestions or ideas, please reach out on [Discord](https://discord.gg/tMVPVJf) or [Github](https://github.com/BattlePlugins/BattleArena/issues/new)!
 
@@ -91,15 +91,15 @@ These are all the dependencies that are currently built into BattleArena right n
 
 These are the three different levels of dependencies that are built into BattleArena:
 
--   _Soft Dependencies_: These are not required plugins, they'll hook into BattleArena if they're running compatible versions side by side to extend your experience.
--   _Rec Dependencies_: We strongly recommend running these along with BattleArena as they'll vastly expand BAs core features.
--   _Hard Dependencies_: You need to run these side by side with BattleArena. Thankfully, we don't have any of those and don't plan too!
+-   **Soft Dependencies**: These are not required plugins, they'll hook into BattleArena if they're running compatible versions side by side to extend your experience.
+-   **Rec Dependencies**: We strongly recommend running these along with BattleArena as they'll vastly expand BAs core features.
+-   **Hard Dependencies**: You need to run these side by side with BattleArena. Thankfully, we don't have any of those and don't plan too!
 
 ### Dependencies
 
 | Plugin Dependency                                                                                                         | Support Provided / Features                                                    | Type |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---- |
-| [Heroes Legacy](https://www.spigotmc.org/resources/305/) / [Heroes Premium](https://www.spigotmc.org/resources/24734/)    | Class Integrations and Proper Inventory Storing / Restoring Support.           | Soft |
+| [Heroes Legacy](https://www.spigotmc.org/resources/305/) / [Heroes Premium [^Premium-Plugin]](https://www.spigotmc.org/resources/24734/)    | Class Integrations and Proper Inventory Storing / Restoring Support.           | Soft |
 | [CombatTag](https://dev.bukkit.org/projects/combat-tag) / [CombatTagPlus](https://www.spigotmc.org/resources/4775/)       | Combat Tag support and customization support within Arenas.                    | Soft |
 | [DisguiseCraft](https://dev.bukkit.org/projects/disguisecraft) / [LibsDisguises](https://www.spigotmc.org/resources/202/) | Disguise support and customization support within Arenas.                      | Soft |
 | [MobArena](https://www.spigotmc.org/resources/34110/)                                                                     | MobArena detection and protection, both in MobArenas and BA Arenas.            | Soft |
@@ -108,17 +108,21 @@ These are the three different levels of dependencies that are built into BattleA
 | [Vault](https://www.spigotmc.org/resources/34315/)                                                                        | Support for most popular economy plugins, provides money hook.                 | Soft |
 | [Multiverse](https://dev.bukkit.org/projects/multiverse-core)                                                             | Multiworld support for Arenas.                                                 | Soft |
 | [BattleTracker](https://www.spigotmc.org/resources/2165/)                                                                 | Sister plugin for stats and tracking in Arenas. Leaderboards and Sign support. | Rec  |
-| [Herochat](https://dev.bukkit.org/projects/herochat) / [HeroChat Pro](https://www.spigotmc.org/resources/34305/)          | Support for Herochat chat and custom messaging.                                | Soft |
+| [Herochat](https://dev.bukkit.org/projects/herochat) / [HeroChat Pro [^Premium-Plugin]](https://www.spigotmc.org/resources/34305/)          | Support for Herochat chat and custom messaging.                                | Soft |
 | [WorldEdit](https://dev.bukkit.org/projects/worldedit)                                                                    | Arena Regeneration, Terrain Control, and Region Selections support.            | Soft |
 | [WorldGuard](https://dev.bukkit.org/projects/worldguard)                                                                  | Region Selection Support and Advanced Arena Region Flags intergration.         | Soft |
-| [mcMMO Classic](https://www.spigotmc.org/resources/2445/) / [mcMMO Returns](https://www.spigotmc.org/resources/64348/)    | Support for skill force enabling / disabling in Arenas.                        | Soft |
+| [mcMMO Classic [^Premium-Plugin]](https://www.spigotmc.org/resources/2445/) / [mcMMO Returns [^Premium-Plugin]](https://www.spigotmc.org/resources/64348/)    | Support for skill force enabling / disabling in Arenas.                        | Soft |
 | [VirtualPlayers](https://dev.bukkit.org/projects/virtualplayers2)                                                         | Support to use VirtualPlayers in Arenas for testing and experimentation!       | Soft |
 | [NameTagEdit](https://www.spigotmc.org/resources/3836/)                                                                   | Update and Support for Custom and Colored Nametags within Arenas.              | Soft |
 | _Example Plugin_                                                                                                          |                                                                                | Hard |
 
+[^Premium-Plugin]: These are Premium Plugins that require payment / subscriptions to use; as such we are not always able to test updated support with all of these plugins as we do not own them. Please let us know if you're encountering issues so we can investigate! Thank you.
+
 ## Developer Info
 
-If you're interested in contributing to BattleArena, please take a look at our [GitHub Page](https://github.com/BattlePlugins/BattleArena) for BattleArena. If you are interested in creating your own arena extensions, please take a look at the \[[Deveeloper API]] page.
+If you're interested in contributing to BattleArena, please take a look at our [GitHub Page](https://github.com/BattlePlugins/BattleArena) for BattleArena.
+
+If you are interested in creating your own arena extensions, please take a look at the [DeveloperInfo](dev/index.md) page.
 
 ## Project Lifetime
 
