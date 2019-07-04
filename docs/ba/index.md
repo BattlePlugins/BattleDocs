@@ -36,7 +36,7 @@ BattleArena features a complete Event system for Minecraft.
 -   Comes default with several Match and Event Types.
 -   Huge amounts of customization through the configs and in game commands.
 -   Framework and API for easily creating custom matches/events.
--   Support for custom arena types such as \[[Spleef]] and \[[CTF]].
+-   Support for custom arena types such as [Spleef](ext/ArenaSpleef/index.md) and [CTF](ext/ArenaCTF/index.md).
 -   ... and a whole lot more!
 
 We've been featured in the following YouTube videos and reviews:
