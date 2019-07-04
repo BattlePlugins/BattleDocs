@@ -99,7 +99,7 @@ These are the three different levels of dependencies that are built into BattleA
 
 | Plugin Dependency                                                                                                         | Support Provided / Features                                                    | Type |
 | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---- |
-| **[BattleTracker](https://www.spigotmc.org/resources/2165/)**                                                                 | Sister plugin for stats and tracking in Arenas. Leaderboards and Sign support. | Rec  |
+| **[BattleTracker](https://www.spigotmc.org/resources/2165/)**                                                                 | Sister plugin to BA for stats and tracking in Arenas. Expanded Leaderboards and Sign support. | Rec  |
 | ++[WorldEdit](https://dev.bukkit.org/projects/worldedit)++                                                                    | Arena Regeneration, Terrain Control, and Region Selections support.            | Rec |
 | ++[WorldGuard](https://dev.bukkit.org/projects/worldguard)++                                                                  | Region Selection Support and Advanced Arena Region Flags intergration.         | Rec |
 | _[VirtualPlayers](https://dev.bukkit.org/projects/virtualplayers2)_                                                         | Support to use VirtualPlayers in Arenas for testing and experimentation!       | Soft |
