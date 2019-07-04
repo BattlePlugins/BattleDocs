@@ -65,23 +65,19 @@ Here are most popular doc pages to read right now:
 
 BattleArena comes with support for developers to create their own BattleArena addons. These extensions allow you to go beyond what is currently able to be done in the plugin and allows for even more awesome games! Here is a list of a few extensions:
 
-**Official Extensions:**
+| Updated | Extension         |                 Docs                |                           Download                           | GitHub | Author | Last Update                                                                                                                                                             |
+| ------- | ----------------- | :---------------------------------: | :----------------------------------------------------------: | :----: | :----: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ❓       | ArenaSpleef       |   [Link](ext/ArenaSpleef/index.md)  | [Link](https://dev.bukkit.org/projects/ArenaSpleef) | [Link](https://github.com/BattlePlugins/ArenaSpleef) | `@BattlePlugins` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaSpleef.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)    |
+| ❓       | ArenaPaintball    | [Link](ext/ArenaPaintball/index.md) | [Link](https://dev.bukkit.org/projects/ArenaPaintball) | [Link](https://github.com/BattlePlugins/ArenaPaintball) | `@BattlePlugins` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaPaintball.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square) |
+| ❓       | ArenaCTF          |    [Link](ext/ArenaCTF/index.md)    | [Link](https://dev.bukkit.org/projects/ArenaCTF) | [Link](https://github.com/BattlePlugins/ArenaCTF) | `@BattlePlugins` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaCTF.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)       |
+| ❓       | ArenaFutbol       |   [Link](ext/ArenaFutbol/index.md)  | [Link](https://dev.bukkit.org/projects/ArenaFutbol) | [Link](https://github.com/BattlePlugins/ArenaFutbol) | `@BattlePlugins` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaFutbol.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)    |
+| ❓       | BombArena         |                                     | [Link](https://dev.bukkit.org/projects/BombArena) |        | `@Europia79` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/BombArena.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)      |
+| ❓       | HostageArena      |                                     | [Link](https://dev.bukkit.org/projects/HostageArena) |        | `@Europia79` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/HostageArena.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)   |
+| ❓       | ArenaTowerRush    |                                     | [Link](https://www.spigotmc.org/resources/27337/) |  Link  | `@RednedEpic` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaTowerRush.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square) |
+| ❓       | ArenaBattleRoyale |                                     | [Link](https://www.spigotmc.org/resources/65557/ |  Link  | `@RednedEpic` | ![GitHub last commit](https://img.shields.io/github/last-commit/RednedEpic/ArenaBattleRoyale.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square) |
+| ❓       | ArenaParkour      |                                     | [Link](https://dev.bukkit.org/projects/ArenaParkour/) |        | `@AuthorHere` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaParkour.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)   |
 
--   [ArenaSpleef](ext/ArenaSpleef/index.md)
--   [ArenaParkour](ext/ArenaParkour/index.md)
--   [ArenaPaintball](ext/ArenaPaintball/index.md)
--   [ArenaCTF](ext/ArenaCTF/index.md)
--   [ArenaFutbol](https://dev.bukkit.org/projects/arenafutbol)
--   [BombArena](https://dev.bukkit.org/projects/bombarena)
--   [HostageArena](https://dev.bukkit.org/projects/hostagearena)
-
-**Unofficial Extensions:**
-
--   [ArenaTOW](https://www.spigotmc.org/resources/27337/)
--   [ArenaBattleRoyale](https://www.spigotmc.org/resources/65557/)
--   [ArenaTowerRush](https://github.com/RednedEpic/ArenaTowerRush)
-
-If you have an extension that you would like listed here, please reach out on [Discord](https://discord.gg/tMVPVJf) or [Github](https://github.com/BattlePlugins).
+If you have an extension that you would like yours listed here, please reach out on [Discord](https://discord.gg/tMVPVJf) or [Github](https://github.com/BattlePlugins).
 
 ## Add-On Plugins
 
@@ -97,26 +93,26 @@ These are the three different levels of dependencies that are built into BattleA
 
 ### Dependencies
 
-| Plugin Dependency                                                                                                         | Support Provided / Features                                                    | Type |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ---- |
-| **[BattleTracker](https://www.spigotmc.org/resources/2165/)**                                                                 | Sister plugin to BA for stats and tracking in Arenas. Expanded Leaderboards and Sign support. | Rec  |
-| ++[WorldEdit](https://dev.bukkit.org/projects/worldedit)++                                                                    | Arena Regeneration, Terrain Control, and Region Selections support.            | Rec |
-| ++[WorldGuard](https://dev.bukkit.org/projects/worldguard)++                                                                  | Region Selection Support and Advanced Arena Region Flags intergration.         | Rec |
-| _[VirtualPlayers](https://dev.bukkit.org/projects/virtualplayers2)_                                                         | Support to use VirtualPlayers in Arenas for testing and experimentation!       | Soft |
-| [MobArena](https://www.spigotmc.org/resources/34110/)                                                                     | MobArena detection and protection, both in MobArenas and BA Arenas.            | Soft |
-| [NameTagEdit](https://www.spigotmc.org/resources/3836/)                                                                   | Update and Support for Custom and Colored Nametags within Arenas.              | Soft |
-| [VanishNoPacket](https://dev.bukkit.org/projects/vanish)                                                                  | "Unvanish after leaving an arena"                                              | Soft |
-| [Vault](https://www.spigotmc.org/resources/34315/)                                                                        | Support for most popular economy plugins, provides money hook.                 | Soft |
-| [Multiverse](https://dev.bukkit.org/projects/multiverse-core)                                                             | Multiworld support for Arenas.                                                 | Soft |
-| [CombatTag](https://dev.bukkit.org/projects/combat-tag) / [CombatTagPlus](https://www.spigotmc.org/resources/4775/)       | Combat Tag support and customization support within Arenas.                    | Soft |
-| [DisguiseCraft](https://dev.bukkit.org/projects/disguisecraft) / [LibsDisguises](https://www.spigotmc.org/resources/202/) | Disguise support and customization support within Arenas.                      | Soft |
-| [Essentials](https://dev.bukkit.org/projects/essentials) / [EssentialsX](https://www.spigotmc.org/resources/9089/)        | God Mode (`/egod`) and `/back` command support within Arenas.                  | Soft |
-| [Herochat](https://dev.bukkit.org/projects/herochat) / [HeroChat Pro](https://www.spigotmc.org/resources/34305/)[^Premium-Plugin] | Support for Herochat chat and custom messaging.                                | Soft |
-| [Heroes Legacy](https://www.spigotmc.org/resources/305/) / [Heroes Premium](https://www.spigotmc.org/resources/24734/)[^Premium-Plugin] | Class Integrations and Proper Inventory Storing / Restoring Support.           | Soft |
-| [mcMMO Classic](https://www.spigotmc.org/resources/2445/)[^Premium-Plugin] / [mcMMO Returns](https://www.spigotmc.org/resources/64348/)[^Premium-Plugin] | Support for skill force enabling / disabling in Arenas.                        | Soft |
-| _Example Plugin_                                                                                                          |                                                                                | Hard |
+| Plugin Dependency                                                                                                                                  | Support Provided / Features                                                                   | Type    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------- |
+| **[BattleTracker](https://www.spigotmc.org/resources/2165/)**                                                                                      | Sister plugin to BA for stats and tracking in Arenas. Expanded Leaderboards and Sign support. | **Rec** |
+| _[WorldEdit](https://dev.bukkit.org/projects/worldedit)_                                                                                           | Arena Regeneration, Terrain Control, and Region Selections support.                           | **Rec** |
+| _[WorldGuard](https://dev.bukkit.org/projects/worldguard)_                                                                                         | Region Selection Support and Advanced Arena Region Flags integration.                         | **Rec** |
+| _[VirtualPlayers](https://dev.bukkit.org/projects/virtualplayers2)_                                                                                | Support to use VirtualPlayers in Arenas for testing and experimentation!                      | Soft    |
+| [MobArena](https://www.spigotmc.org/resources/34110/)                                                                                              | MobArena detection and protection, both in MobArenas and BA Arenas.                           | Soft    |
+| [NameTagEdit](https://www.spigotmc.org/resources/3836/)                                                                                            | Update and Support for Custom and Colored Nametags within Arenas.                             | Soft    |
+| [VanishNoPacket](https://dev.bukkit.org/projects/vanish)                                                                                           | "Unvanish after leaving an arena"                                                             | Soft    |
+| [Vault](https://www.spigotmc.org/resources/34315/)                                                                                                 | Support for most popular economy plugins, provides money hook.                                | Soft    |
+| [Multiverse](https://dev.bukkit.org/projects/multiverse-core)                                                                                      | Multiworld support for Arenas.                                                                | Soft    |
+| [CombatTag](https://dev.bukkit.org/projects/combat-tag) / [CombatTagPlus](https://www.spigotmc.org/resources/4775/)                                | Combat Tag support and customization support within Arenas.                                   | Soft    |
+| [DisguiseCraft](https://dev.bukkit.org/projects/disguisecraft) / [LibsDisguises](https://www.spigotmc.org/resources/202/)                          | Disguise support and customization support within Arenas.                                     | Soft    |
+| [Essentials](https://dev.bukkit.org/projects/essentials) / [EssentialsX](https://www.spigotmc.org/resources/9089/)                                 | God Mode (`/egod`) and `/back` command support within Arenas.                                 | Soft    |
+| [Herochat](https://dev.bukkit.org/projects/herochat) / [HeroChat Pro](https://www.spigotmc.org/resources/34305/) [^Premium-Plugin]                 | Support for Herochat chat and custom messaging.                                               | Soft    |
+| [Heroes Legacy](https://www.spigotmc.org/resources/305/) / [Heroes Premium](https://www.spigotmc.org/resources/24734/) [^Premium-Plugin]           | Class Integrations and Proper Inventory Storing / Restoring Support.                          | Soft    |
+| [mcMMO Classic](https://www.spigotmc.org/resources/2445/) [^Premium-Plugin] / [mcMMO](https://www.spigotmc.org/resources/64348/) [^Premium-Plugin] | Support for skill force enabling / disabling in Arenas.                                       | Soft    |
+| _Example Plugin_                                                                                                                                   |                                                                                               | Hard    |
 
-[^Premium-Plugin]: These are Premium Plugins that require payment / subscriptions to use; as such we are not always able to test updated support with all of these plugins as we do not own them. Please let us know if you're encountering issues so we can investigate! Thank you.
+[^Premium-Plugin]&#x3A; These are Premium Plugins that require payment / subscriptions to use; as such we are not always able to test updated support with all of these plugins as we do not own them. Please let us know if you're encountering issues so we can investigate! Thank you.
 
 ## Developer Info
 
