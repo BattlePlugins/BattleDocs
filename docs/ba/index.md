@@ -65,7 +65,7 @@ Here are most popular doc pages to read right now:
 
 BattleArena comes with support for developers to create their own BattleArena addons. These extensions allow you to go beyond what is currently able to be done in the plugin and allows for even more awesome games! Here is a list of a few extensions:
 
-| Updated | Extension         |                 Docs                |                           Download                           | GitHub | Author | Last Update                                                                                                                                                             |
+| S | Extension | Docs | Download | GitHub | Author | Last Update |
 | ------- | ----------------- | :---------------------------------: | :----------------------------------------------------------: | :----: | :----: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ❓       | ArenaSpleef       |   [Link](ext/ArenaSpleef/index.md)  | [Link](https://dev.bukkit.org/projects/ArenaSpleef) | [Link](https://github.com/BattlePlugins/ArenaSpleef) | `@BattlePlugins` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaSpleef.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square)    |
 | ❓       | ArenaPaintball    | [Link](ext/ArenaPaintball/index.md) | [Link](https://dev.bukkit.org/projects/ArenaPaintball) | [Link](https://github.com/BattlePlugins/ArenaPaintball) | `@BattlePlugins` | ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/ArenaPaintball.svg?color=blue&label=Update&logo=github&logoColor=white&style=flat-square) |
