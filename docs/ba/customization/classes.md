@@ -96,7 +96,7 @@ Say you wanted team1 to be all gladiators, team2 to be all archers, and any othe
 
 ## Using Heroes classes
 
-To use heroes as classes you will first need to add the items and enchants you want to give for each Heroes class into the BattleArena/classes.yml(see this for more info [[<https://github.com/alkarinv/BattleArena/wiki/Classsetup#wiki-Creating_new_classes>]]).
+To use heroes as classes you will first need to add the items and enchants you want to give for each Heroes class into the [BattleArena/classes.yml](https://github.com/BattlePlugins/BattleArena/blob/master/default_files/classes.yml).
 
 Once you have created your classes you can specify them like normal through the giveClass.
 
