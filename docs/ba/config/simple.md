@@ -4,7 +4,7 @@ title: Edting the `config.yml` File
 sidebar_label: Config (Simple)
 ---
 ## `config.yml`
-The current default [[BattleArena/config.yml|Default Config]]
+The current default [Default Config](https://github.com/BattlePlugins/BattleArena/blob/master/src/java/config.yml)
 
 ## Reloading the config
 Once you change a config option you will need to reload the config.  
@@ -318,24 +318,24 @@ All stages and transitions can have `any` of the 'options'.
 ### Match Stages
 A match is composed of different stages.
 
-1. onOpen: For events this happens when you open the event. For matches when players get matched from the queue.
-2. onPrestart: time between onOpen and onStart.
-3. onStart: Match starts
-4. onVictory: One player or team is victorious
-5. onComplete: match was completed successfully
-6. onCancel: match was cancelled
-7. onFinish: happens after onComplete or onCancel
+1. `onOpen`: For events this happens when you open the event. For matches when players get matched from the queue.
+2. `onPrestart`: time between onOpen and onStart.
+3. `onStart`: Match starts
+4. `onVictory`: One player or team is victorious
+5. `onComplete`: match was completed successfully
+6. `onCancel`: match was cancelled
+7. `onFinish`: happens after onComplete or onCancel
 
 ### Match Transitions 
 During the match many different transitions can happen
 
-1. onSpawn: Happens on teleport or on player Respawn ( if respawn is set within onDeath)
-2. onDeath: What happens when a player dies
-3. onJoin: player joining a match
-4. onEnter: Happens when the player first enters the arena.  right after before they are teleported in.  
-5. onLeave: Happens when the player leaves the arena(aka if they win(after onComplete), or if they die(and dont respawn) )
-6. losers: Happens after onVictory, before onComplete, used for prizes
-7. winner: Happens after onVictory, before onComplete, used for prizes
-8. drawers: Happens after onVictory, before onComplete, used for prizes
-9. firstPlace: Prizes for tournaments
-10. participants: Prizes for tournaments
+1. `onSpawn`: Happens on teleport or on player Respawn ( if respawn is set within onDeath)
+2. `onDeath`: What happens when a player dies
+3. `onJoin`: player joining a match
+4. `onEnter`: Happens when the player first enters the arena.  right after before they are teleported in.  
+5. `onLeave`: Happens when the player leaves the arena(aka if they win(after onComplete), or if they die(and dont respawn) )
+6. `losers`: Happens after onVictory, before onComplete, used for prizes
+7. `winner`: Happens after onVictory, before onComplete, used for prizes
+8. `drawers`: Happens after onVictory, before onComplete, used for prizes
+9. `firstPlace`: Prizes for tournaments
+10. `participants`: Prizes for tournaments
