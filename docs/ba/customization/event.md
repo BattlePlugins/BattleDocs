@@ -10,21 +10,21 @@ sidebar_label: Events
 
 Options that are only valid inside onJoin:
 
-- alwaysJoin : Allow players to join at any time
+- `alwaysJoin` : Allow players to join at any time
 
 ## onDeath or Normal Options
 
-- randomSpawn: Spawn the player at a random spawn location. You should place this inside of onDeath or wherever you teleport a player inside. 'teleportIn'
+- `randomSpawn`: Spawn the player at a random spawn location. You should place this inside of onDeath or wherever you teleport a player inside. 'teleportIn'
 
 ## onDeath Options
 
 valid options for onDeath. You can also use any of the Normal options, but the following are special to onDeath only(or just very useful).
 
-- clearInventory : clears the item drops
-- respawn: respawn the player (This options should only be used in onDeath:)
-- randomRespawn: respawn the player at a random spawn location (This options should only be used in onDeath:)
-- keepInventory: When players die they respawn with their same inventory (also will not drop items on death)
-- noExperienceLoss: Keep Experience when you die (great for a mobarena)
+- `clearInventory`: clears the item drops
+- `respawn`: respawn the player (This options should only be used in onDeath:)
+- `randomRespawn`: respawn the player at a random spawn location (This options should only be used in onDeath:)
+- `keepInventory`: When players die they respawn with their same inventory (also will not drop items on death)
+- `noExperienceLoss`: Keep Experience when you die (great for a mobarena)
 
 ## onSpawn Options
 
@@ -79,7 +79,11 @@ Arena:
 
 ## Join Phase Games
 
-Games that have a join phase must be "opened", then "started". While "opened" players can join and leave. You must then "start" the game. You can "open" and "start" the match by doing the command `/<event> auto`, which will open the game for 3 minutes(configurable) then start it automatically. ===Auto run=== The simplest way to make an event happen. Do it automatically, it will announce instructions every minute until it starts.
+Games that have a join phase must be "opened", then "started". While "opened" players can join and leave. You must then "start" the game. You can "open" and "start" the match by doing the command `/<event> auto`, which will open the game for 3 minutes(configurable) then start it automatically. 
+
+===Auto Run=== 
+
+The simplest way to make an event happen. Do it automatically, it will announce instructions every minute until it starts.
 
 - `/<event> auto` Example: `/ffa auto`
 
@@ -109,21 +113,21 @@ Valid Options:
 - Rated, Unrated
 - teamSize=
 
-  <range>: Example teamSize=1+ ( 1 or more players per team ): Example teamSize=2 (2 players per team)</range>
+  <range>: Example teamSize=1+ ( 1 or more players per team ): Example teamSize=2 (2 players per team)
 
 - nTeams=
 
-  <range>: Example nTeams=2 (2 teams competing), Example nTeams=2+ (2 or more teams, useful for tournaments)</range>
+  <range>: Example nTeams=2 (2 teams competing), Example nTeams=2+ (2 or more teams, useful for tournaments)
 
 - silent : Dont announce event messages
 
 - time=
 
-  <seconds> : Example time=60, seconds till event starts (only used for auto)</seconds>
+  <seconds> : Example time=60, seconds till event starts (only used for auto)
 
 - interval=
 
-  <seconds>: How often to announce this event is starting messages (only used for auto)</seconds>
+  <seconds>: How often to announce this event is starting messages (only used for auto)
 
 - arena=
 
@@ -136,21 +140,16 @@ Valid Options:
 
 - `/ffa auto teamSize=1+ nTeams=2` will run a competition between 2 teams. Last team with players alive wins.
 
-GITHUB WIKI IMPORT
+== Event Walkthrough Example == 
 
-== Event Walkthrough Example == Lets assume that you want to change the FreeForAll to use a waiting room.
+Lets assume that you want to change the FreeForAll to use a waiting room.
 
-# Find the section in the config.yml that deals with FreeForAlls, freeForAll:
-
-# Find the match stage '''onJoin'''.
-
-# Change the option '''teleportIn''' to '''teleportWaitroom'''
-
-# Now we need to add '''teleportIn''' to either '''onPrestart''' or '''onStart'''
-
-# Reload the config, using '''/arena reload'''
-
-# Add a waitroom to your ffa arena. '''/ffa alter waitroom 1'''
+1. Find the section in the config.yml that deals with FreeForAlls, freeForAll:
+2. Find the match stage **onJoin**.
+3. Change the option **teleportIn** to **teleportWaitroom**.
+4. Now we need to add **teleportIn** to either **onPrestart** or **onStart**.
+5. Reload the config, using **/arena reload**.
+6. Add a waitroom to your ffa arena. **/ffa alter waitroom 1**.
 
 Example:
 
@@ -181,25 +180,17 @@ freeForAll:
         options: [teleportOut, clearInventory, deEnchant, undisguise]
 ```
 
-== Match Walkthrough Example == Lets assume that you want to change the battleground(bg) to use a wait room. Let's also make the match start in 30 seconds so they have that much time to stay in the waitroom before starting.
+== Match Walkthrough Example == 
 
-# Find the section in the config.yml that deals with battlegrounds, battleground:
+Lets assume that you want to change the battleground(bg) to use a wait room. Let's also make the match start in 30 seconds so they have that much time to stay in the waitroom before starting.
 
-# Find the match stage '''onPrestart'''.
-
-# Change the option '''teleportIn''' to '''teleportWaitroom'''
-
-# Now we need to add '''teleportIn''' to '''onStart'''
-
-# Reload the config, using '''/arena reload'''
-
-# Add a waitroom to your bg arena. '''/bg alter
-
-<arena name=""> waitroom 1'''</arena>
-
-# add in the option secondsTillMatch:
-
-<seconds> inside of battleground:</seconds>
+1. Find the section in the config.yml that deals with battlegrounds, battleground:
+2. Find the match stage **onPrestart**.
+3. Change the option **teleportIn** to **teleportWaitroom**.
+4. Now we need to add **teleportIn** to **onStart**.
+5. Reload the config, using **/arena reload**.
+6. Add a waitroom to your bg arena. `/bg alter <arena name> waitroom 1`
+7. Add in the option `secondsTillMatch: <seconds>` inside of battleground.
 
 Example:
 
