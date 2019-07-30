@@ -12,101 +12,67 @@ sidebar_label: Stage
 
 Valid options for all stages (excluding preReqs):
 
-- clearInventory : clears the inventory of the player
-- giveItems: give the player the specified items. needs a list under items: [[Enchantments | Valid Item Enchants]]
-- teleportWaitroom : teleports a player into a waitroom
-- teleportIn : teleports a player into the arena
-- teleportOut : Teleport a player out of the arena
-- teleportTo:
-
-  <world,x,y,z> : teleport players to the given location (This is placed underneath options)</world,x,y,z>
-
-- noTeleport : Prevent users from teleporting
-- noWorldChange : Prevent users from teleporting across worlds
-- health=
-
-  <health amount=""> : set the health of the player (20 is max)</health>
-
-- healthp=
-
-  <health percentage=""> : set the percentage health of a player (100 is max)</health>
-
-- hunger=
-
-  <hunger amount=""> : set the hunger of the player (20 is max)</hunger>
-
-- money=
-
-  <money to="" give=""> : give the player money</money>
-
-- experience=
-
-  <exp to="" give=""> : give the player experience</exp>
-
-- pvpOn : set PvP damage to be on (overrides most other plugins). Friendly fire is off
-- pvpOff : set PvP damage to be off (overrides most other plugins). No damage between players permitted
-- invincible : make players invincible
-- invulnerable=
-
-  <time in="" seconds=""> : make player invulnerable for the given seconds</time>
-
-- blockBreakOff : Turn off block breaking
-- blockBreakOn : turn on block breaking (overrides most other plugins)
-- blockPlaceOff : Turn off placing blocks
-- blockPlaceOn : Turn on placing blocks (overrides most other plugins)
-- dropItemOff : Disallow player to drop items
-- disguiseAll=
-
-  <name>: disguise all players with the given value</name>
-
-- undisguise: undisguise players
-- enchants: needs a list of potion effects under enchants. [[Potions | Potion Effect List]]
-- deEnchant: get rid of all potion effects on player. If you have Heroes it will also remove heroes effects.
-- gameMode=
-
-  <gamemode> : Set the gamemode of the player, [adventure, creative, normal]</gamemode>
-
-- doCommands : do the specified commands as the console or player. Needs a list underneath called commands:
-- storeExperience/restoreExperience: store/restore Experience
-- storeItems/restoreItems : store/restore
-- storeAll/restoreAll : store/restore experience, items, health, hunger, magic, gamemode
-- flightOff : set the players flight off
-- flightOn : set the players flight on
-- flightSpeed=
-
-  <float> : set the players flight speed</float>
+- `clearInventory` : Clears the inventory of the player
+- `giveItems` : Gives the player the specified items. Needs a list under items (See: See [Item Syntax](item-syntax.md)).
+- `teleportWaitroom` : Teleports a player into a waitroom
+- `teleportIn` : Teleports a player into the arena
+- `teleportOut` : Teleports a player out of the arena
+- `teleportTo` : <world,x,y,z> : Teleport players to the given location (This is placed underneath options)
+- `noTeleport` : Prevents users from teleporting
+- `noWorldChange` : Prevents users from teleporting across worlds
+- `health=<amount>` : Sets the health of the player (20 is max)
+- `healthp=<amount>` : Sets the percentage health of a player (100 is max)
+- `hunger=<amount>` : Sets the hunger of the player (20 is max)
+- `money=<amount>` : Gives the player money
+- `experience=<amount>` : Gives the player experience
+- `pvpOn` : Sets PvP damage to be on (overrides most other plugins). Friendly fire is off
+- `pvpOff` : Sets PvP damage to be off (overrides most other plugins). No damage between players permitted
+- `invincible` : Makes players invincible
+- `invulnerable=<time in seconds>` : Make players invulnerable for the given seconds
+- `blockBreakOff` : Turns off block breaking
+- `blockBreakOn` : Turns on block breaking (overrides most other plugins)
+- `blockPlaceOff` : Turns off placing blocks
+- `blockPlaceOn` : Turns on placing blocks (overrides most other plugins)
+- `dropItemOf` : Disallows player to drop items
+- `disguiseAll=disguise>` : Disguises all players with the given disguise
+- `undisguise` : Undisguise players
+- `enchants` : Needss a list of potion effects under enchants. [[Potions | Potion Effect List]]
+- `deEnchant` : Gets rid of all potion effects on player. If you have Heroes it will also remove heroes effects.
+- `gameMode=<gamemode>` : Sets the gamemode of the player, (survival, creative, adventure, spectator)
+- `doCommands` : Runs the specified commands as the console or player. Needs a list underneath called commands:
+- `storeExperience/restoreExperience` : Stores/restores experience
+- `storeItems/restoreItems` : Sstore/restores items
+- `storeAll/restoreAll` : Stores/restore experience, items, health, hunger, magic, gamemode
+- `flightOff` : Sets the players flight off
+- `flightOn` : Sets the players flight on
+- `flightSpeed=<speed>` : Set the players flight speed
 
 ## Defaults Options
 
 Options that are only valid inside defaults:
 
-- alwaysOpen: This game once started never ends (automatically sets alwaysJoin as well)
-- individualWins: A player can win or lose separately and not end the game
-- armorTeams : Use colored armor for teams
-- woolTeams: if there is more than 1 player on a team, give them wool heads
-- alwaysWoolTeams: always give the players wool heads
-- alwaysTeamNames: always use the team names (like red/blue) as opposed to the player names
+- `alwaysOpen` : This game once started never ends (automatically sets alwaysJoin as well)
+- `individualWins` : A player can win or lose separately and not end the game
+- `armorTeams` : Use colored armor for teams
+- `woolTeams` : if there is more than 1 player on a team, give them wool heads
+- `alwaysWoolTeams` : always give the players wool heads
+- `alwaysTeamNames` : always use the team names (like red/blue) as opposed to the player names
 
 ## Prerequisite Options
 
 Options that are valid preReqs:
 
-- noInventory : Players can not join or be teleported into the arena if they have items.
-- needArmor : Players need to have armor to join or be teleported in
-- needItems : Players will need items to join, needs a list under items:
-- money=
-
-  <money> : Charge money for players to join this type of match/event.</money>
-
-- sameWorld : Players will need to be in the same world as the arena to join
-- withinDistance=
-
-  <x> : make players be within x blocks of the arena in order to join (based off of the arena spawnpoints)</x>
-
-- levelRange=
-
-  <range> : Only allow players that have the specified levels to join.
-  ** Examples. levelRange:10+ , only allow players that have 10 or more levels to join (Works with Heroes classes). levelRange: 2-5 , only allow players from levels 2 through 5 to join</range>
+- `noInventory` : Players can not join or be teleported into the arena if they have items.
+- `needArmor` : Players need to have armor to join or be teleported in
+- `needItems` : Players will need items to join, needs a list under items:
+- `money=<money>` : Charge money for players to join this type of match/event.
+- `sameWorld` : Players will need to be in the same world as the arena to join
+- `withinDistance=<distance>` : make players be within x blocks of the arena in order to join (based off of the arena spawnpoints)
+- `levelRange=<range>` : Only allow players that have the specified levels to join.
+  
+**Level Range Example:**
+- `levelRange=10+` : Only allow players that have 10 or more levels to join (Works with Heroes classes). 
+- `levelRange=2-5` : Only allow players from levels 2 through 5 to join
 
 ## Example
 
