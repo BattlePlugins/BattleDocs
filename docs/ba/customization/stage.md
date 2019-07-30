@@ -13,7 +13,7 @@ sidebar_label: Stage
 Valid options for all stages (excluding preReqs):
 
 - `clearInventory` : Clears the inventory of the player
-- `giveItems` : Gives the player the specified items. Needs a list under items (See: See [Item Syntax](item-syntax.md)).
+- `giveItems` : Gives the player the specified items. Needs a list under items (See: [Item Syntax](item-syntax.md)).
 - `teleportWaitroom` : Teleports a player into a waitroom
 - `teleportIn` : Teleports a player into the arena
 - `teleportOut` : Teleports a player out of the arena
@@ -36,7 +36,7 @@ Valid options for all stages (excluding preReqs):
 - `dropItemOf` : Disallows player to drop items
 - `disguiseAll=disguise>` : Disguises all players with the given disguise
 - `undisguise` : Undisguise players
-- `enchants` : Needss a list of potion effects under enchants. [[Potions | Potion Effect List]]
+- `enchants` : Needss a list of potion effects under enchants.  (See: [Potions](potions.md))
 - `deEnchant` : Gets rid of all potion effects on player. If you have Heroes it will also remove heroes effects.
 - `gameMode=<gamemode>` : Sets the gamemode of the player, (survival, creative, adventure, spectator)
 - `doCommands` : Runs the specified commands as the console or player. Needs a list underneath called commands:
