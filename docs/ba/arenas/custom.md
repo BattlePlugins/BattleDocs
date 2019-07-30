@@ -13,11 +13,19 @@ You can create your own custom matches and events with separate names, commands,
 Example creating a new Paintball match called SuperPaintball.
 
 1. Copy the [ArenaPaintball/PaintballConfig.yml](https://github.com/BattlePlugins/ArenaPaintball/blob/master/PaintballConfig.yml) and make a new config file called ArenaPaintball/SuperPaintballConfig.yml
-2. Now open up SuperPaintballConfig.yml and edit it to look like the following: ```yaml configVersion: 2.0
-
-SuperPaintball: enabled: true database: SuperPaintball # or delete if you dont want wins/losses/top, needs BattleTracker arenaClass: Paintball ## needs to be Paintball, (giving this match the abilities of a normal paintball) rated: true # if database is enabled prefix: "&f[SuperPaintball]&e" joinType: Queue victoryCondition: LastManStanding nTeams: 2+ teamSize: 1 cmd: spb #what they will have to type to join in this case /spb join
-
-```
+2. Now open up SuperPaintballConfig.yml and edit it to look like the following: 
+```yaml configVersion: 2.0
+SuperPaintball: 
+  enabled: true 
+  database: SuperPaintball # or delete if you dont want wins/losses/top, needs BattleTracker 
+  arenaClass: Paintball ## needs to be Paintball, (giving this match the abilities of a normal paintball) 
+  rated: true # if database is enabled 
+  prefix: "&f[SuperPaintball]&e" 
+  joinType: Queue 
+  victoryCondition: LastManStanding 
+  nTeams: 2+ 
+  teamSize: 1 
+  cmd: spb #what they will have to type to join in this case /spb join
 ### You can delete any stages/transitions that have no options
 ### for a list of options see wiki
 defaults:
@@ -48,10 +56,11 @@ losers: ## what to give the losers
     options: []
 ```
 
+The important lines are switching over places that have Paintball to SuperPaintball and adding the two lines, arenaType and arenaClass. 
 
-The important lines are switching over places that have Paintball to SuperPaintball and adding the two lines, arenaType and arenaClass.
-arenaType specifies what type of arenas this new competition will use. If you specify spleef, it would use spleef arenas, if you specify battleground, it will use battleground arenas. Normally you will want to set this to whatever your custom competition is, in this case "SuperPaintball".
-arenaClass specifies what properties this competition will have. Paintball has the property of increasing snowball damage, so we want to use this. so we want to set "arenaClass: Paintball"
+`arenaType` specifies what type of arenas this new competition will use. If you specify spleef, it would use spleef arenas, if you specify battleground, it will use battleground arenas. Normally you will want to set this to whatever your custom competition is, in this case "SuperPaintball". 
+
+`arenaClass` specifies what properties this competition will have. Paintball has the property of increasing snowball damage, so we want to use this. So we want to set it to `Paintball`.
 
 ### Example 2
 Recreating the old event(JoinPhase) paintball, EPaintball
@@ -102,4 +111,8 @@ EPaintball:
         options: [health=20, hunger=20]
 ````
 
-The important lines are switching over places that have Paintball to SuperPaintball and adding the two lines, arenaType and arenaClass. arenaType specifies what type of arenas this new competition will use. If you specify spleef, it would use spleef arenas, if you specify battleground, it will use battleground arenas. Normally you will want to set this to whatever your custom competition is, in this case "SuperPaintball". arenaClass specifies what properties this competition will have. Paintball has the property of increasing snowball damage, so we want to use this. so we want to set "arenaClass: Paintball"
+The important lines are switching over places that have Paintball to SuperPaintball and adding the two lines, arenaType and arenaClass. 
+
+`arenaType` specifies what type of arenas this new competition will use. If you specify spleef, it would use spleef arenas, if you specify battleground, it will use battleground arenas. Normally you will want to set this to whatever your custom competition is, in this case "SuperPaintball". 
+
+`arenaClass` specifies what properties this competition will have. Paintball has the property of increasing snowball damage, so we want to use this. So we want to set it to `Paintball`.
