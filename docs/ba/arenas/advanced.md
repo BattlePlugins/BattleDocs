@@ -46,6 +46,6 @@ After this all players will be transported in where the person with the most kil
 1. Repeat `I` & `II` replacing #`2` until you've set all `4` needed spawn points.
 2. Make sure players have the correct permission to join. Permission needed is: `arena.ffa.join`
 3. Type: `/ffa join`.
-4. Have a bunch other players also type `/faa join`.
+4. Have a bunch other players also type `/ffa join`.
 
 _Optionally you can configure join-phases, waiting rooms, equipment, rewards, and more using `Customization` section of the sidebar!_
