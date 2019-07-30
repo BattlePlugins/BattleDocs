@@ -10,7 +10,7 @@ The current default [Default Config](https://github.com/BattlePlugins/BattleAren
 Once you change a config option you will need to reload the config.  
 * `/arena reload`
 
-Or if you are changing the config of one of the plugins that uses BattleArena(like CTF, Spleef, or Paintball), reload the appropriate Config.
+Or if you are changing the config of one of the plugins that uses BattleArena (like CTF, Spleef, or Paintball), reload the appropriate Config.
 Spleef Example:
 * `/spleef reload`
 
@@ -18,12 +18,20 @@ Spleef Example:
 Victory Conditions are the conditions under which a match will end. Currently these are the valid victory conditions
 * LastManStanding: Match will end when there is only one team left (or player if teamSize: 1)
 * nLives: Every player has a set number of lives. Match ends when only one team is left (or player if teamSize: 1)
-** nLives needs a line below it with the line '    nLives: &lt;number or lives>', '    nlives: 3' as an example
 * InfiniteLives: teams have infinite lives
 * TimeLimit: Only use a time limit, or when not enough teams remain
 * HighestKills: Players have infinite lives and the team with the highest kills wins
 
-## Scheduled Event Options ==
+**NOTE:** If the `nLives` victory condition is being used, a new `nLives` line needs to be added below the victory condition with the amount of livesthat are needed.
+
+Here is an Example:
+```yml
+  victoryCondition: nLives
+  nLives: 3 # 3 lives for example
+```
+
+## Scheduled Event Options 
+
 ### Running events after a restart
 There is a config option called `onServerStart: []`.  If you want to start running scheduled events continuously add the option `startContinuous`, if you just want to start the next event, put `startNext`.
 Example:
@@ -31,7 +39,6 @@ Example:
 defaultOptions:
     onServerStart: [startContinuous]
 ```
-
 
 ## Message Options 
 
@@ -98,14 +105,14 @@ skirmish:
 ```
 
 #### Example 3
-allow 2 or more teams to play
+Allow 2 or more teams to play
 ```yaml
 skirmish:
     nTeams: 2+
 ```
 
 ### Changing the number of players on each team 
-* add the option `teamSize:` with the team size to the base match/event type config
+* Add the option `teamSize:` with the team size to the base match/event type config
 #### Example 1
 Example to set 4 players per team:
 ```yaml
@@ -129,7 +136,7 @@ skirmish:
 
 ## Match & Event Options
 ### Changing the length of a match 
-* add the option `matchTime: &lt;x>` to specify how long you want the match to last ( add this option if it doesn't exist).  set to -1 if you want it to run forever until someone wins
+* Add the option `matchTime: &lt;x>` to specify how long you want the match to last ( add this option if it doesn't exist).  set to -1 if you want it to run forever until someone wins
 #### Example 
 ```yaml
 skirmish:
@@ -147,7 +154,7 @@ skirmish:
 ### Giving money for winning/losing
 
 #### Option 1:
-* add the option `money=&lt;amount>` into the `winner:` config section.  Create the section `winner:` if it doesn't exist.
+* Add the option `money=&lt;amount>` into the `winner:` config section.  Create the section `winner:` if it doesn't exist.
 * To give money to the losers, do the same but in the section `losers:`
 ##### Example:
 ```yaml
@@ -158,9 +165,9 @@ skirmish:
 ```
 
 #### Option 2:
-* add Poolmoney=<percentage in decimal form> into `winner:` config section.  Create the section `winner:` if it doesn't exist.
+* Add Poolmoney=<percentage in decimal form> into `winner:` config section.  Create the section `winner:` if it doesn't exist.
 * Valid percentages (decimal form): 0.0 (0%) - 1.0 (100%). (Basically take the percentage you want and move the decimal 2 places to the left. ex. .5 (50%), .25 (25%) .15 (15%) and so on.)
-* Poolmoney allows you to pay the winner a percentage of the pot.
+* Pool money allows you to pay the winner a percentage of the pot.
 * For team based arenas this provides a way to dynamically adjust the winners pay out depending on how many entrants their are. More entrants. Bigger Payout. Fewer Entrants. Smaller Payout.
 ##### Example:
 ```yaml
@@ -170,9 +177,9 @@ skirmish:
 
 ### Giving items for winning/losing
 * Create the section `winner:` if it doesn't exist.
-* add an `options:` node. The value is a yaml list, so [] is an empty list.
-* add the option: `giveItems`. This merely turns this option on.
-* add a node `items:` or `giveItems:` with a list of items to give.
+* Add an `options:` node. The value is a yaml list, so [] is an empty list.
+* Add the option: `giveItems`. This merely turns this option on.
+* Add a node `items:` or `giveItems:` with a list of items to give.
 
 #### Example:
 ```yaml
@@ -188,7 +195,7 @@ skirmish:
 ```
 
 ### Giving money for getting first place/participating in a tournament
-* add the option `money=&lt;amount>` into the `winner:` config section.  Create the section `firstPlace:` if it doesn't exist.
+* Add the option `money=&lt;amount>` into the `winner:` config section.  Create the section `firstPlace:` if it doesn't exist.
 * To give money to the losers, do the same but in the section `losers:`
 #### Example:
 ```yaml
@@ -199,7 +206,7 @@ skirmish:
 ```
 
 ### Giving items for getting first place/ participating in a tournament
-* add the option `giveItems` into the `firstPlace:` config section.  Create the section `firstPlace:` if it doesn't exist.  After that you will need to list out your items: in a list below the options (see below example) 
+* Add the option `giveItems` into the `firstPlace:` config section.  Create the section `firstPlace:` if it doesn't exist.  After that you will need to list out your items: in a list below the options (see below example) 
 * To give items to the losers, do the same but in the section `participants:`
 #### Example:
 ```yaml
@@ -215,7 +222,7 @@ skirmish:
 ```
 
 ### Clearing Inventory on Death
-* add the option `clearInventory` into the `onDeath:` config section.  Create the section `onDeath:` if it doesn't exist.
+* Add the option `clearInventory` into the `onDeath:` config section.  Create the section `onDeath:` if it doesn't exist.
 #### Example:
 ```yaml
     onDeath:
@@ -223,7 +230,7 @@ skirmish:
 ```
 
 ### Respawning on Death
-* add the option `respawn` or `randomRespawn` into the `onDeath:` config section.  Create the section `onDeath:` if it doesn't exist.
+* Add the option `respawn` or `randomRespawn` into the `onDeath:` config section.  Create the section `onDeath:` if it doesn't exist.
 #### Example:
 ```yaml
     onDeath:
@@ -259,11 +266,11 @@ For example.  Lets say alkarin_v is entering the arena, and the command is "- pl
 Add a configuration section `victoryCondition` to the match/event. 
 
 Current Valid victoryConditions
-* lastManStanding
-* highestKills
-* nDeaths (To be changed to nLives)
-* timeLimit (Nobody will ever win)
-* noTeamsLeft (All teams are dead)
+* `lastManStanding`
+* `highestKills`
+* `nLives`
+* `timeLimit` (Nobody will ever win)
+* `noTeamsLeft` (All teams are dead)
 
 #### Example:
 ```yaml
@@ -303,7 +310,7 @@ battleground:
 ```
 
 ### Adding a price to join
-* add the option `money=&lt;amount>` into the `preReqs:` config section.  Create the section `preReqs:` if it doesn't exist.
+* Add the option `money=&lt;amount>` into the `preReqs:` config section.  Create the section `preReqs:` if it doesn't exist.
 #### Example:
 ```yaml
     preReqs:
@@ -313,7 +320,6 @@ battleground:
 ## Stages and Transitions
 
 All stages and transitions can have `any` of the 'options'.
-
 
 ### Match Stages
 A match is composed of different stages.
