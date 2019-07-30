@@ -12,52 +12,56 @@ can display accurate messages.
 ```
 
 ## Adding New Classes
+
 Here are some examples of adding classes:
 ```yaml
-  classes:
-      gladiator:
-          items:
-              - diamond_sword: sharp:1 1
-              - bow: 1
-              - arrow: 32
-              - diamond_helm: 1
-              - diamond_chest: 1
-              - diamond_leggings: 1
-              - diamond_boots: 1
-              - 373;8229: 1 # potion of healing 2
-              - 373;8193: 1 # potion of regen
-              - 373;16396: 1 # splash potion of harming 1
-          enchants:
-              - speed:1:900
-              - resistance:1:900
-      archer:
-          items:
-              - iron_sword: sharp:1 1
-              - bow: flame:2 power:3 punch:2 1 
-              - arrow: 32
-              - leather_helm: 1
-              - iron_chest: prot:3 1
-              - leather_leggings: 1
-              - leather_boots: 1
-              - 373;8229: 1 # potion of healing 2
-              - 373;8193: 1 # potion of regen
-              - 373;16396: 1 # splash potion of harming 1
-      monk:
-          items:
-              - leather_helm: 1
-              - leather_chest: 1
-              - leather_leggings: 1
-              - leather_boots: 1
-              - 373;8229: 2 # potion of healing 2
-              - 373;8193: 2 # potion of regen
-              - 373;16396: 3 # splash potion of harming 1
-          enchants:
-              - strength:3:900 # increase attack power
-              - speed:2:900 # increase movement
-              - haste:3:900 # increase attack speed
-              - resistance:2:900 # reduce damage taken
-              - jump:2:900 # jump 2 blocks higher than normal
-              - regen:1:900 # regen life
+classes:
+    gladiator:
+        displayName: "&4Gladiator" ### Used for signs
+        items:
+            - diamond_sword: sharp:1 1
+            - bow: 1
+            - arrow: 32
+            - diamond_helmet: 1
+            - diamond_chestplate: 1
+            - diamond_leggings: 1
+            - diamond_boots: 1
+            - potion: effects="heal:2" displayName="Potion of Healing" 1 # potion of healing 2
+            - potion: effects="regeneration:1:45" displayName="Potion of Regeneration" 1 # potion of regen
+            - splash_potion: effects="harm:1" displayName="Splash Potion of Harming" 1 # splash potion of harming 1
+        enchants:
+            - speed:1:120
+            - resistance:1:120
+    archer:
+        displayName: "&2Archer" ### Used for signs
+        items:
+            - iron_sword: sharp:1 1
+            - bow: flame:2 power:3 punch:2 1
+            - arrow: 32
+            - leather_helmet: 1
+            - iron_chestplate: prot:3 1
+            - leather_leggings: 1
+            - leather_boots: 1
+            - potion: effects="heal:2" displayName="Potion of Healing" 1 # potion of healing 2
+            - potion: effects="regeneration:1:45" displayName="Potion of Regeneration" 1 # potion of regen
+            - splash_potion: effects="harm:1" displayName="Splash Potion of Harming" 1 # splash potion of harming 1
+    monk:
+        displayName: "&fMonk" ### Used for signs
+        items:
+            - leather_helmet: 1
+            - leather_chestplate: 1
+            - leather_leggings: 1
+            - leather_boots: 1
+            - potion: effects="heal:2" displayName="Potion of Healing" 1 # potion of healing 2
+            - potion: effects="regeneration:1:45" displayName="Potion of Regeneration" 1 # potion of regen
+            - splash_potion: effects="harm:1" displayName="Splash Potion of Harming" 1 # splash potion of harming 1
+        enchants:
+            - strength:2:900 # increase attack power
+            - speed:2:900 # increase movement
+            - haste:2:900 # increase attack speed
+            - resistance:1:900 # reduce damage taken
+            - jump:2:900 # jump 2 blocks higher than normal
+            - regen:1:60 # regen life
 ```
 
 ## default Match Options (these can be overridden by each match type) 
@@ -145,6 +149,8 @@ defaultMatchOptions:
 ### Match
 ## a single battle between teams
 ```
+## Matches
+
 ### Arena
 ```yaml
 arena:
@@ -231,48 +237,82 @@ battleground:
             - resistance:1:900
 ```
      
-### Colliseum
+### Colosseum
 ```yaml
-colliseum:
-    enabled: true
-    command: col
-    type: colliseum
+Colosseum:
+  name: Colosseum
+  command: Colosseum
+  prefix: '&8[Colosseum]'
+  signDisplayName: &8[Colosseum]
+  gameSize:
+    nTeams: '4'
+    teamSize: '1'
+  nLives: '2'
+  victoryCondition: LASTMANSTANDING
+  tracking:
     database: col
-    victoryCondition: highestKills
-    matchTime: 60
-    minTeams: 4
-    preReqs:
-        options: [clearInventory]
-    onJoin:
-        options: [pvpOff]
-    onPrestart:
-        options: [pvpOff, teleportIn, deEnchant]
-    onStart:
-        options: [pvpOn]
-    onComplete:
-        options: [teleportOut, clearInventory, deEnchant, undisguise]
-    onSpawn:
-        options: [enchants, health=20, hunger=20, deEnchant,giveItems, woolTeams]
-        enchants:
-            - speed:1
-        items: # ignored if options doesnt have "giveItems"
-            - diamond_sword: sharpness:1 1
-            - bow: 1
-            - arrow: 32
-            - diamond_helm: 1
-            - diamond_chest: 1
-            - diamond_leggings: 1
-            - diamond_boot: 1
-    onDeath:
-        options: [respawn, clearInventory]
-    winner:
-        options: [enchants, money=1,experience=300, health=20, hunger=20]
-        enchants:
-            - speed:1:900
-            - resistance:1:900
+    rated: true
+    useTrackerMessages: false
+  arenaType: Colosseum
+  arenaClass: Arena
+  onEnter:
+    options:
+    - STOREALL
+  onLeave:
+    options:
+    - RESTOREALL
+  preReqs:
+    options:
+    - clearInventory
+  onJoin:
+    options:
+    - pvpOff
+  onPreStart:
+    options:
+    - woolTeams
+    - teleportIn
+    - pvpOff
+  onStart:
+    options:
+    - pvpOn
+  onComplete:
+    options:
+    - teleportOut
+    - clearInventory
+  onSpawn:
+    giveItems:
+    - DIAMOND_SWORD DAMAGE_ALL:1 1
+    - BOW 1
+    - ARROW 32
+    - DIAMOND_HELMET 1
+    - DIAMOND_CHESTPLATE 1
+    - DIAMOND_LEGGINGS 1
+    - DIAMOND_BOOTS 1
+    enchants:
+    - speed:1:60
+    options:
+    - woolTeams
+    - health=20.0
+    - hunger=20
+    - deEnchant
+    - respawnWithClass
+  onDeath:
+    options:
+    - clearInventory
+    - respawn
+  winners:
+    enchants:
+    - speed:1:900
+    - prot:1:900
+    options:
+    - health=20.0
+    - hunger=20
+    - experience=300
+    - money=1.0
 ```
 
-## EVENTS
+## Events
+
 ### FFA Event
 ```yaml
 freeForAll:
@@ -294,10 +334,10 @@ freeForAll:
             - bow: 1
             - tnt: 3
             - arrow: 32
-            - leather_helm: 1
-            - leather_chest: 1
+            - leather_helmet: 1
+            - leather_chestplate: 1
             - leather_leggings: 1
-            - leather_boot: 1
+            - leather_boots: 1
             - bread: 5
     onStart:
         options: [pvpOn]
@@ -340,10 +380,10 @@ deathMatch:
             - bow: 1
             - tnt: 3
             - arrow: 32
-            - leather_helm: 1
-            - leather_chest: 1
+            - leather_helmet: 1
+            - leather_chestplate: 1
             - leather_leggings: 1
-            - leather_boot: 1
+            - leather_boots: 1
             - bread: 5
         enchants:
             - speed:1
@@ -376,11 +416,11 @@ tourney:
             - iron_sword: 1
             - bow: 1
             - arrow: 16
-            - iron_helm: 1
-            - iron_chest: 1
+            - iron_helmet: 1
+            - iron_chestplate: 1
             - iron_leggings: 1
             - iron_boots: 1
-            - 373;8197: 2
+            - potion: effects="heal:2" displayName="Potion of Healing" 1 # potion of healing 2
             - bread: 3
     winner:
         options: [clearInventory, experience=100, health=20, hunger=20]
