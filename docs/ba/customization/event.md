@@ -81,7 +81,7 @@ Arena:
 
 Games that have a join phase must be "opened", then "started". While "opened" players can join and leave. You must then "start" the game. You can "open" and "start" the match by doing the command `/<event> auto`, which will open the game for 3 minutes(configurable) then start it automatically. 
 
-===Auto Run=== 
+### Auto Run  
 
 The simplest way to make an event happen. Do it automatically, it will announce instructions every minute until it starts.
 
@@ -106,41 +106,22 @@ This is not a tournament option, but it's useful sometimes if something unexpect
 
 ## Examples
 
-## Full commands with all options
+### Full commands with all options
 
 Valid Options:
 
 - Rated, Unrated
-- teamSize=
-
-  <range>: Example teamSize=1+ ( 1 or more players per team ): Example teamSize=2 (2 players per team)
-
-- nTeams=
-
-  <range>: Example nTeams=2 (2 teams competing), Example nTeams=2+ (2 or more teams, useful for tournaments)
-
-- silent : Dont announce event messages
-
-- time=
-
-  <seconds> : Example time=60, seconds till event starts (only used for auto)
-
-- interval=
-
-  <seconds>: How often to announce this event is starting messages (only used for auto)
-
-- arena=
-
-  <arena>: Specify a specific arena to run this event in.
-  Example:</arena>
-
+- `teamSize=<range>`: Example teamSize=1+ (1 or more players per team): Example teamSize=2 (2 players per team)
+- `nTeams=<range>`: Example nTeams=2 (2 teams competing), Example nTeams=2+ (2 or more teams, useful for tournaments)
+- `silent` : Dont announce event messages
+- `time=<seconds>` : Example time=60, seconds till event starts (only used for auto)
+- `interval=<seconds>`: How often to announce this event is starting messages (only used for auto)
+- `arena=<arena>`: Specify a specific arena to run this event in. 
 - `/ffa auto teamSize=1 nTeams=2+` will run a free for all
-
 - `/ffa auto teamSize=2 nTeams=2+` will run a 2 team free for all
-
 - `/ffa auto teamSize=1+ nTeams=2` will run a competition between 2 teams. Last team with players alive wins.
 
-== Event Walkthrough Example == 
+## Event Walkthrough Example 
 
 Lets assume that you want to change the FreeForAll to use a waiting room.
 
@@ -169,10 +150,10 @@ freeForAll:
             - bow: 1
             - tnt: 3
             - arrow: 32
-            - leather_helm: 1
-            - leather_chest: 1
+            - leather_helmet: 1
+            - leather_chestplate: 1
             - leather_leggings: 1
-            - leather_boot: 1
+            - leather_boots: 1
             - bread: 5
     onStart:
         options: [teleportIn, pvpOn]
@@ -180,7 +161,7 @@ freeForAll:
         options: [teleportOut, clearInventory, deEnchant, undisguise]
 ```
 
-== Match Walkthrough Example == 
+## Match Walkthrough Example =
 
 Lets assume that you want to change the battleground(bg) to use a wait room. Let's also make the match start in 30 seconds so they have that much time to stay in the waitroom before starting.
 
