@@ -69,50 +69,53 @@ can display accurate messages.</p>
 </code></pre>
 <h2><a class="anchor" aria-hidden="true" id="adding-new-classes"></a><a href="#adding-new-classes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding New Classes</h2>
 <p>Here are some examples of adding classes:</p>
-<pre><code class="hljs css language-yaml"><span class="hljs-attr">  classes:</span>
-<span class="hljs-attr">      gladiator:</span>
-<span class="hljs-attr">          items:</span>
-<span class="hljs-attr">              - diamond_sword:</span> <span class="hljs-attr">sharp:1</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - bow:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - arrow:</span> <span class="hljs-number">32</span>
-<span class="hljs-attr">              - diamond_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - diamond_chest:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - diamond_leggings:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - diamond_boots:</span> <span class="hljs-number">1</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;8229:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of healing 2</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;8193:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of regen</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;16396:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># splash potion of harming 1</span>
-<span class="hljs-attr">          enchants:</span>
-<span class="hljs-attr">              - speed:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
-<span class="hljs-attr">              - resistance:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
-<span class="hljs-attr">      archer:</span>
-<span class="hljs-attr">          items:</span>
-<span class="hljs-attr">              - iron_sword:</span> <span class="hljs-attr">sharp:1</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - bow:</span> <span class="hljs-attr">flame:2</span> <span class="hljs-attr">power:3</span> <span class="hljs-attr">punch:2</span> <span class="hljs-number">1</span> 
-<span class="hljs-attr">              - arrow:</span> <span class="hljs-number">32</span>
-<span class="hljs-attr">              - leather_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - iron_chest:</span> <span class="hljs-attr">prot:3</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - leather_leggings:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - leather_boots:</span> <span class="hljs-number">1</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;8229:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of healing 2</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;8193:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of regen</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;16396:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># splash potion of harming 1</span>
-<span class="hljs-attr">      monk:</span>
-<span class="hljs-attr">          items:</span>
-<span class="hljs-attr">              - leather_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - leather_chest:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - leather_leggings:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">              - leather_boots:</span> <span class="hljs-number">1</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;8229:</span> <span class="hljs-number">2</span> <span class="hljs-comment"># potion of healing 2</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;8193:</span> <span class="hljs-number">2</span> <span class="hljs-comment"># potion of regen</span>
-<span class="hljs-bullet">              -</span> <span class="hljs-number">373</span><span class="hljs-string">;16396:</span> <span class="hljs-number">3</span> <span class="hljs-comment"># splash potion of harming 1</span>
-<span class="hljs-attr">          enchants:</span>
-<span class="hljs-attr">              - strength:</span><span class="hljs-number">3</span><span class="hljs-string">:900</span> <span class="hljs-comment"># increase attack power</span>
-<span class="hljs-attr">              - speed:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># increase movement</span>
-<span class="hljs-attr">              - haste:</span><span class="hljs-number">3</span><span class="hljs-string">:900</span> <span class="hljs-comment"># increase attack speed</span>
-<span class="hljs-attr">              - resistance:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># reduce damage taken</span>
-<span class="hljs-attr">              - jump:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># jump 2 blocks higher than normal</span>
-<span class="hljs-attr">              - regen:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span> <span class="hljs-comment"># regen life</span>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">classes:</span>
+<span class="hljs-attr">    gladiator:</span>
+<span class="hljs-attr">        displayName:</span> <span class="hljs-string">"&amp;4Gladiator"</span> <span class="hljs-comment">### Used for signs</span>
+<span class="hljs-attr">        items:</span>
+<span class="hljs-attr">            - diamond_sword:</span> <span class="hljs-attr">sharp:1</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - bow:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - arrow:</span> <span class="hljs-number">32</span>
+<span class="hljs-attr">            - diamond_helmet:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - diamond_chestplate:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - diamond_leggings:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - diamond_boots:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="heal:2"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Healing"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of healing 2</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="regeneration:1:45"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Regeneration"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of regen</span>
+<span class="hljs-attr">            - splash_potion:</span> <span class="hljs-string">effects="harm:1"</span> <span class="hljs-string">displayName="Splash</span> <span class="hljs-string">Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Harming"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># splash potion of harming 1</span>
+<span class="hljs-attr">        enchants:</span>
+<span class="hljs-attr">            - speed:</span><span class="hljs-number">1</span><span class="hljs-string">:120</span>
+<span class="hljs-attr">            - resistance:</span><span class="hljs-number">1</span><span class="hljs-string">:120</span>
+<span class="hljs-attr">    archer:</span>
+<span class="hljs-attr">        displayName:</span> <span class="hljs-string">"&amp;2Archer"</span> <span class="hljs-comment">### Used for signs</span>
+<span class="hljs-attr">        items:</span>
+<span class="hljs-attr">            - iron_sword:</span> <span class="hljs-attr">sharp:1</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - bow:</span> <span class="hljs-attr">flame:2</span> <span class="hljs-attr">power:3</span> <span class="hljs-attr">punch:2</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - arrow:</span> <span class="hljs-number">32</span>
+<span class="hljs-attr">            - leather_helmet:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - iron_chestplate:</span> <span class="hljs-attr">prot:3</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_leggings:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_boots:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="heal:2"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Healing"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of healing 2</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="regeneration:1:45"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Regeneration"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of regen</span>
+<span class="hljs-attr">            - splash_potion:</span> <span class="hljs-string">effects="harm:1"</span> <span class="hljs-string">displayName="Splash</span> <span class="hljs-string">Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Harming"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># splash potion of harming 1</span>
+<span class="hljs-attr">    monk:</span>
+<span class="hljs-attr">        displayName:</span> <span class="hljs-string">"&amp;fMonk"</span> <span class="hljs-comment">### Used for signs</span>
+<span class="hljs-attr">        items:</span>
+<span class="hljs-attr">            - leather_helmet:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_chestplate:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_leggings:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_boots:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="heal:2"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Healing"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of healing 2</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="regeneration:1:45"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Regeneration"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of regen</span>
+<span class="hljs-attr">            - splash_potion:</span> <span class="hljs-string">effects="harm:1"</span> <span class="hljs-string">displayName="Splash</span> <span class="hljs-string">Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Harming"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># splash potion of harming 1</span>
+<span class="hljs-attr">        enchants:</span>
+<span class="hljs-attr">            - strength:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># increase attack power</span>
+<span class="hljs-attr">            - speed:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># increase movement</span>
+<span class="hljs-attr">            - haste:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># increase attack speed</span>
+<span class="hljs-attr">            - resistance:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span> <span class="hljs-comment"># reduce damage taken</span>
+<span class="hljs-attr">            - jump:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span> <span class="hljs-comment"># jump 2 blocks higher than normal</span>
+<span class="hljs-attr">            - regen:</span><span class="hljs-number">1</span><span class="hljs-string">:60</span> <span class="hljs-comment"># regen life</span>
 </code></pre>
 <h2><a class="anchor" aria-hidden="true" id="default-match-options-these-can-be-overridden-by-each-match-type"></a><a href="#default-match-options-these-can-be-overridden-by-each-match-type" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>default Match Options (these can be overridden by each match type)</h2>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">defaultMatchOptions:</span>
@@ -198,6 +201,7 @@ can display accurate messages.</p>
 <span class="hljs-comment">### Match</span>
 <span class="hljs-comment">## a single battle between teams</span>
 </code></pre>
+<h2><a class="anchor" aria-hidden="true" id="matches"></a><a href="#matches" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Matches</h2>
 <h3><a class="anchor" aria-hidden="true" id="arena"></a><a href="#arena" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Arena</h3>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">arena:</span>
 <span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span>
@@ -278,46 +282,79 @@ can display accurate messages.</p>
 <span class="hljs-attr">            - speed:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
 <span class="hljs-attr">            - resistance:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
 </code></pre>
-<h3><a class="anchor" aria-hidden="true" id="colliseum"></a><a href="#colliseum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Colliseum</h3>
-<pre><code class="hljs css language-yaml"><span class="hljs-attr">colliseum:</span>
-<span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">    command:</span> <span class="hljs-string">col</span>
-<span class="hljs-attr">    type:</span> <span class="hljs-string">colliseum</span>
+<h3><a class="anchor" aria-hidden="true" id="colosseum"></a><a href="#colosseum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Colosseum</h3>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">Colosseum:</span>
+<span class="hljs-attr">  name:</span> <span class="hljs-string">Colosseum</span>
+<span class="hljs-attr">  command:</span> <span class="hljs-string">Colosseum</span>
+<span class="hljs-attr">  prefix:</span> <span class="hljs-string">'&amp;8[Colosseum]'</span>
+<span class="hljs-attr">  signDisplayName:</span> <span class="hljs-string">&amp;8[Colosseum]</span>
+<span class="hljs-attr">  gameSize:</span>
+<span class="hljs-attr">    nTeams:</span> <span class="hljs-string">'4'</span>
+<span class="hljs-attr">    teamSize:</span> <span class="hljs-string">'1'</span>
+<span class="hljs-attr">  nLives:</span> <span class="hljs-string">'2'</span>
+<span class="hljs-attr">  victoryCondition:</span> <span class="hljs-string">LASTMANSTANDING</span>
+<span class="hljs-attr">  tracking:</span>
 <span class="hljs-attr">    database:</span> <span class="hljs-string">col</span>
-<span class="hljs-attr">    victoryCondition:</span> <span class="hljs-string">highestKills</span>
-<span class="hljs-attr">    matchTime:</span> <span class="hljs-number">60</span>
-<span class="hljs-attr">    minTeams:</span> <span class="hljs-number">4</span>
-<span class="hljs-attr">    preReqs:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[clearInventory]</span>
-<span class="hljs-attr">    onJoin:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[pvpOff]</span>
-<span class="hljs-attr">    onPrestart:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[pvpOff,</span> <span class="hljs-string">teleportIn,</span> <span class="hljs-string">deEnchant]</span>
-<span class="hljs-attr">    onStart:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[pvpOn]</span>
-<span class="hljs-attr">    onComplete:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[teleportOut,</span> <span class="hljs-string">clearInventory,</span> <span class="hljs-string">deEnchant,</span> <span class="hljs-string">undisguise]</span>
-<span class="hljs-attr">    onSpawn:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[enchants,</span> <span class="hljs-string">health=20,</span> <span class="hljs-string">hunger=20,</span> <span class="hljs-string">deEnchant,giveItems,</span> <span class="hljs-string">woolTeams]</span>
-<span class="hljs-attr">        enchants:</span>
-<span class="hljs-attr">            - speed:</span><span class="hljs-number">1</span>
-<span class="hljs-attr">        items:</span> <span class="hljs-comment"># ignored if options doesnt have "giveItems"</span>
-<span class="hljs-attr">            - diamond_sword:</span> <span class="hljs-attr">sharpness:1</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - bow:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - arrow:</span> <span class="hljs-number">32</span>
-<span class="hljs-attr">            - diamond_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - diamond_chest:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - diamond_leggings:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - diamond_boot:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">    onDeath:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[respawn,</span> <span class="hljs-string">clearInventory]</span>
-<span class="hljs-attr">    winner:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[enchants,</span> <span class="hljs-string">money=1,experience=300,</span> <span class="hljs-string">health=20,</span> <span class="hljs-string">hunger=20]</span>
-<span class="hljs-attr">        enchants:</span>
-<span class="hljs-attr">            - speed:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
-<span class="hljs-attr">            - resistance:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
+<span class="hljs-attr">    rated:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">    useTrackerMessages:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">  arenaType:</span> <span class="hljs-string">Colosseum</span>
+<span class="hljs-attr">  arenaClass:</span> <span class="hljs-string">Arena</span>
+<span class="hljs-attr">  onEnter:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">STOREALL</span>
+<span class="hljs-attr">  onLeave:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">RESTOREALL</span>
+<span class="hljs-attr">  preReqs:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">clearInventory</span>
+<span class="hljs-attr">  onJoin:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pvpOff</span>
+<span class="hljs-attr">  onPreStart:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">woolTeams</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">teleportIn</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pvpOff</span>
+<span class="hljs-attr">  onStart:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">pvpOn</span>
+<span class="hljs-attr">  onComplete:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">teleportOut</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">clearInventory</span>
+<span class="hljs-attr">  onSpawn:</span>
+<span class="hljs-attr">    giveItems:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">DIAMOND_SWORD</span> <span class="hljs-attr">DAMAGE_ALL:1</span> <span class="hljs-number">1</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">BOW</span> <span class="hljs-number">1</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">ARROW</span> <span class="hljs-number">32</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">DIAMOND_HELMET</span> <span class="hljs-number">1</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">DIAMOND_CHESTPLATE</span> <span class="hljs-number">1</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">DIAMOND_LEGGINGS</span> <span class="hljs-number">1</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">DIAMOND_BOOTS</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">    enchants:</span>
+<span class="hljs-attr">    - speed:</span><span class="hljs-number">1</span><span class="hljs-string">:60</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">woolTeams</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">health=20.0</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">hunger=20</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">deEnchant</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">respawnWithClass</span>
+<span class="hljs-attr">  onDeath:</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">clearInventory</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">respawn</span>
+<span class="hljs-attr">  winners:</span>
+<span class="hljs-attr">    enchants:</span>
+<span class="hljs-attr">    - speed:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
+<span class="hljs-attr">    - prot:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
+<span class="hljs-attr">    options:</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">health=20.0</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">hunger=20</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">experience=300</span>
+<span class="hljs-bullet">    -</span> <span class="hljs-string">money=1.0</span>
 </code></pre>
-<h2><a class="anchor" aria-hidden="true" id="events"></a><a href="#events" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>EVENTS</h2>
+<h2><a class="anchor" aria-hidden="true" id="events"></a><a href="#events" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Events</h2>
 <h3><a class="anchor" aria-hidden="true" id="ffa-event"></a><a href="#ffa-event" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>FFA Event</h3>
 <pre><code class="hljs css language-yaml"><span class="hljs-attr">freeForAll:</span>
 <span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span>
@@ -338,10 +375,10 @@ can display accurate messages.</p>
 <span class="hljs-attr">            - bow:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - tnt:</span> <span class="hljs-number">3</span>
 <span class="hljs-attr">            - arrow:</span> <span class="hljs-number">32</span>
-<span class="hljs-attr">            - leather_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - leather_chest:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_helmet:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_chestplate:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - leather_leggings:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - leather_boot:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_boots:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - bread:</span> <span class="hljs-number">5</span>
 <span class="hljs-attr">    onStart:</span>
 <span class="hljs-attr">        options:</span> <span class="hljs-string">[pvpOn]</span>
@@ -382,10 +419,10 @@ can display accurate messages.</p>
 <span class="hljs-attr">            - bow:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - tnt:</span> <span class="hljs-number">3</span>
 <span class="hljs-attr">            - arrow:</span> <span class="hljs-number">32</span>
-<span class="hljs-attr">            - leather_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - leather_chest:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_helmet:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_chestplate:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - leather_leggings:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - leather_boot:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - leather_boots:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - bread:</span> <span class="hljs-number">5</span>
 <span class="hljs-attr">        enchants:</span>
 <span class="hljs-attr">            - speed:</span><span class="hljs-number">1</span>
@@ -416,11 +453,11 @@ can display accurate messages.</p>
 <span class="hljs-attr">            - iron_sword:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - bow:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - arrow:</span> <span class="hljs-number">16</span>
-<span class="hljs-attr">            - iron_helm:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - iron_chest:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - iron_helmet:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">            - iron_chestplate:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - iron_leggings:</span> <span class="hljs-number">1</span>
 <span class="hljs-attr">            - iron_boots:</span> <span class="hljs-number">1</span>
-<span class="hljs-bullet">            -</span> <span class="hljs-number">373</span><span class="hljs-string">;8197:</span> <span class="hljs-number">2</span>
+<span class="hljs-attr">            - potion:</span> <span class="hljs-string">effects="heal:2"</span> <span class="hljs-string">displayName="Potion</span> <span class="hljs-string">of</span> <span class="hljs-string">Healing"</span> <span class="hljs-number">1</span> <span class="hljs-comment"># potion of healing 2</span>
 <span class="hljs-attr">            - bread:</span> <span class="hljs-number">3</span>
 <span class="hljs-attr">    winner:</span>
 <span class="hljs-attr">        options:</span> <span class="hljs-string">[clearInventory,</span> <span class="hljs-string">experience=100,</span> <span class="hljs-string">health=20,</span> <span class="hljs-string">hunger=20]</span>
@@ -431,7 +468,7 @@ can display accurate messages.</p>
 <span class="hljs-attr">            - resistance:</span><span class="hljs-number">2</span><span class="hljs-string">:900</span>
 <span class="hljs-attr">            - haste:</span><span class="hljs-number">1</span><span class="hljs-string">:900</span>
 </code></pre>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 6/16/2019 by Redned</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ba/config/config-simple"><span class="arrow-prev">← </span><span>Config (Simple)</span></a><a class="docs-next button" href="/docs/ba/config/commands"><span>Commands</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#server-currency">Server Currency</a></li><li><a href="#adding-new-classes">Adding New Classes</a></li><li><a href="#default-match-options-these-can-be-overridden-by-each-match-type">default Match Options (these can be overridden by each match type)</a><ul class="toc-headings"><li><a href="#arena">Arena</a></li><li><a href="#skirmish">Skirmish</a></li><li><a href="#battleground">BattleGround</a></li><li><a href="#colliseum">Colliseum</a></li></ul></li><li><a href="#events">EVENTS</a><ul class="toc-headings"><li><a href="#ffa-event">FFA Event</a></li><li><a href="#death-match-event">Death Match Event</a></li></ul></li><li><a href="#tournament-event">Tournament Event</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/footer.png" alt="Documentation" width="44" height="44"/></a><div align="left"><h5>Organization Info:</h5><a href="https://battleplugins.org/"><img src="https://battleplugins.org/img/favicon.ico" alt="Icon" height="17"/> BattlePlugins Site</a><a href="https://discord.gg/tMVPVJf"><img src="https://battleplugins.org/img/discord.ico" alt="Icon" height="17"/>  Discord Server</a><a href="https://github.org/BattlePlugins"><img src="https://battleplugins.org/img/night.ico" alt="Icon" height="17"/> Github Repos</a><a href="https://ci.battleplugins.org/"><img src="https://battleplugins.org/img/jenkins.ico" alt="Icon" height="17"/> Jenkins CI</a><a href="https://repo.battleplugins.org/"><img src="https://battleplugins.org/img/repo.ico" alt="Icon" height="17"/> Public Repo</a></div><div align="left"><h5>Docs Quick Start:</h5><a href="https://docs.battleplugins.org/docs/"><i class="fas icon-white fa-desktop"></i> Docs Home</a><a href="https://docs.battleplugins.org/docs/ba"><i class="fas icon-white fa-border-style"></i> BattleArena Docs</a><a href="https://docs.battleplugins.org/docs/bt"><i class="fas icon-white fa-chart-area"></i> BattleTracker Docs</a><a href="https://docs.battleplugins.org/docs/vp"><i class="fas icon-white fa-user-friends"></i> VirtualPlayer Docs</a><a href="https://wiki.battleplugins.org/"><i class="fas icon-white fa-scroll"></i> Legacy Wiki</a></div><div align="left"><h5>Site Stats:</h5><a href="https://github.com/BattlePlugins/BattleDocs" class="footer-badge"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?color=brightgreen&amp;label=Watching%20Repo%3A&amp;logo=github&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://github.com/BattlePlugins/BattleDocs" class="footer-badge"><img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/battleplugins/battledocs.svg?color=brightgreen&amp;label=Site%20Size&amp;logo=github&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://github.com/BattlePlugins/BattleDocs" class="footer-badge"><img alt="Most Recent Commit" src="https://img.shields.io/github/last-commit/battleplugins/battledocs.svg?label=Last%20Update&amp;logo=github&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://ci.battleplugins.org/job/BattlePlugins/job/BattleDocs/" class="footer-badge"><img alt="Jenkins Builds" src="https://img.shields.io/jenkins/build/https/ci.battleplugins.org/job/BattlePlugins/job/BattleDocs/job/master.svg?label=Build%20Status&amp;logo=jenkins&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://discord.gg/J3Hjjb8" class="footer-badge"><img alt="Discord Server" src="https://img.shields.io/discord/305170628468801537.svg?color=brightgreen&amp;label=Discord%20Server&amp;logo=discord&amp;logoColor=white&amp;style=flat-square"/></a></div></section><div><center><a href="https://github.com/BattlePlugins/battledocs" class="footer-social"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/battleplugins/battledocs.svg?style=social"/></a> | <a href="https://github.com/BattlePlugins/battledocs" class="footer-social"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?label=Watch&amp;style=social"/></a><br/><h5 class="footer-slogan">Hosted By:</h5><a href="https://cl6web.com" class="footer-slogan"><img src="/img/cl6.png" alt="CL6 Hosting" height="60"/></a></center></div><section class="copyright">Copyright © 2019 BattlePlugins.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 7/29/2019 by Redned</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/ba/config/config-simple"><span class="arrow-prev">← </span><span>Config (Simple)</span></a><a class="docs-next button" href="/docs/ba/config/commands"><span>Commands</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#server-currency">Server Currency</a></li><li><a href="#adding-new-classes">Adding New Classes</a></li><li><a href="#default-match-options-these-can-be-overridden-by-each-match-type">default Match Options (these can be overridden by each match type)</a></li><li><a href="#matches">Matches</a><ul class="toc-headings"><li><a href="#arena">Arena</a></li><li><a href="#skirmish">Skirmish</a></li><li><a href="#battleground">BattleGround</a></li><li><a href="#colosseum">Colosseum</a></li></ul></li><li><a href="#events">Events</a><ul class="toc-headings"><li><a href="#ffa-event">FFA Event</a></li><li><a href="#death-match-event">Death Match Event</a></li></ul></li><li><a href="#tournament-event">Tournament Event</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/footer.png" alt="Documentation" width="44" height="44"/></a><div align="left"><h5>Organization Info:</h5><a href="https://battleplugins.org/"><img src="https://battleplugins.org/img/favicon.ico" alt="Icon" height="17"/> BattlePlugins Site</a><a href="https://discord.gg/tMVPVJf"><img src="https://battleplugins.org/img/discord.ico" alt="Icon" height="17"/>  Discord Server</a><a href="https://github.org/BattlePlugins"><img src="https://battleplugins.org/img/night.ico" alt="Icon" height="17"/> Github Repos</a><a href="https://ci.battleplugins.org/"><img src="https://battleplugins.org/img/jenkins.ico" alt="Icon" height="17"/> Jenkins CI</a><a href="https://repo.battleplugins.org/"><img src="https://battleplugins.org/img/repo.ico" alt="Icon" height="17"/> Public Repo</a></div><div align="left"><h5>Docs Quick Start:</h5><a href="https://docs.battleplugins.org/docs/"><i class="fas icon-white fa-desktop"></i> Docs Home</a><a href="https://docs.battleplugins.org/docs/ba"><i class="fas icon-white fa-border-style"></i> BattleArena Docs</a><a href="https://docs.battleplugins.org/docs/bt"><i class="fas icon-white fa-chart-area"></i> BattleTracker Docs</a><a href="https://docs.battleplugins.org/docs/vp"><i class="fas icon-white fa-user-friends"></i> VirtualPlayer Docs</a><a href="https://wiki.battleplugins.org/"><i class="fas icon-white fa-scroll"></i> Legacy Wiki</a></div><div align="left"><h5>Site Stats:</h5><a href="https://github.com/BattlePlugins/BattleDocs" class="footer-badge"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?color=brightgreen&amp;label=Watching%20Repo%3A&amp;logo=github&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://github.com/BattlePlugins/BattleDocs" class="footer-badge"><img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/battleplugins/battledocs.svg?color=brightgreen&amp;label=Site%20Size&amp;logo=github&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://github.com/BattlePlugins/BattleDocs" class="footer-badge"><img alt="Most Recent Commit" src="https://img.shields.io/github/last-commit/battleplugins/battledocs.svg?label=Last%20Update&amp;logo=github&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://ci.battleplugins.org/job/BattlePlugins/job/BattleDocs/" class="footer-badge"><img alt="Jenkins Builds" src="https://img.shields.io/jenkins/build/https/ci.battleplugins.org/job/BattlePlugins/job/BattleDocs/job/master.svg?label=Build%20Status&amp;logo=jenkins&amp;logoColor=white&amp;style=flat-square"/></a><a href="https://discord.gg/J3Hjjb8" class="footer-badge"><img alt="Discord Server" src="https://img.shields.io/discord/305170628468801537.svg?color=brightgreen&amp;label=Discord%20Server&amp;logo=discord&amp;logoColor=white&amp;style=flat-square"/></a></div></section><div><center><a href="https://github.com/BattlePlugins/battledocs" class="footer-social"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/battleplugins/battledocs.svg?style=social"/></a> | <a href="https://github.com/BattlePlugins/battledocs" class="footer-social"><img alt="GitHub Watchers" src="https://img.shields.io/github/watchers/battleplugins/battledocs.svg?label=Watch&amp;style=social"/></a><br/><h5 class="footer-slogan">Hosted By:</h5><a href="https://cl6web.com" class="footer-slogan"><img src="/img/cl6.png" alt="CL6 Hosting" height="60"/></a></center></div><section class="copyright">Copyright © 2019 BattlePlugins.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;
