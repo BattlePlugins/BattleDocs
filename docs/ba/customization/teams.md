@@ -8,7 +8,7 @@ You can join all games in a team so that you can play with friends. To do this y
 
 # Permissions
 
-See the [[BattleArena/Permissions |permissions]] page
+See the [ba/config/permissions.md](Permissions) page
 
 # Creating a team
 
