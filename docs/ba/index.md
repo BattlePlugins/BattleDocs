@@ -110,7 +110,6 @@ These are the three different levels of dependencies that are built into BattleA
 | [Herochat](https://dev.bukkit.org/projects/herochat) / [HeroChat Pro](https://www.spigotmc.org/resources/34305/) [^Premium-Plugin]                 | Support for Herochat chat and custom messaging.                                               | Soft    |
 | [Heroes Legacy](https://www.spigotmc.org/resources/305/) / [Heroes Premium](https://www.spigotmc.org/resources/24734/) [^Premium-Plugin]           | Class Integrations and Proper Inventory Storing / Restoring Support.                          | Soft    |
 | [mcMMO Classic](https://www.spigotmc.org/resources/2445/) [^Premium-Plugin] / [mcMMO](https://www.spigotmc.org/resources/64348/) [^Premium-Plugin] | Support for skill force enabling / disabling in Arenas.                                       | Soft    |
-| _Example Plugin_                                                                                                                                   |                                                                                               | Hard    |
 
 [^Premium-Plugin]&#x3A; These are Premium Plugins that require payment / subscriptions to use; as such we are not always able to test updated support with all of these plugins as we do not own them. Please let us know if you're encountering issues so we can investigate! Thank you.
 
@@ -122,12 +121,8 @@ If you are interested in creating your own arena extensions, please take a look 
 
 ## Project Lifetime
 
--   Project Creation:
-
--   Total Commits:
-
+-   Project Creation: ![Project creation](https://flat.badgen.net/badge/Project%20Creation/08-10-2012/green)
+-   Total Commits: ![Total commits](https://flat.badgen.net/github/commits/BattlePlugins/BattleArena)
 -   Total Contributors: ![GitHub contributors](https://img.shields.io/github/contributors/battleplugins/battlearena.svg?style=flat-square)
-
 -   Commit Activity: ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/battleplugins/battlearena.svg?style=flat-square)
-
 -   Most Recent Commit: ![GitHub last commit](https://img.shields.io/github/last-commit/battleplugins/battlearena.svg?style=flat-square)
