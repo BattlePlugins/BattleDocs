@@ -60,7 +60,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/BattlePlugins/BattleDocs/tree/master/docs/ba/arenas/regions.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Arena Regions</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="adding-regions-with-worldguard"></a><a href="#adding-regions-with-worldguard" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding regions with WorldGuard</h1>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/BattlePlugins/BattleDocs/tree/master/docs/ba/arenas/regions.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Arena Regions</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="adding-regions-with-worldguard"></a><a href="#adding-regions-with-worldguard" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding regions with WorldGuard</h1>
 <h2><a class="anchor" aria-hidden="true" id="adding-a-worldguard-region-to-your-arena"></a><a href="#adding-a-worldguard-region-to-your-arena" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding a worldGuard region to your arena</h2>
 <ul>
 <li>First, use your //wand to select an area, then</li>
@@ -73,28 +73,28 @@
 <li><p>Reload the config <code>/arena reload</code> (if you are using an addon plugin like spleef <code>/spleef reload</code>) Example: Say you want to make it so that items on the floor are cleared when a match is complete. While they are fighting you want to make them not be able to run away. Let's edit the skirmish to make this happen. This is what the config looks like before:</p>
 <pre><code class="hljs css language-yaml"><span class="hljs-comment">### Skirmish</span>
 <span class="hljs-attr">skirmish:</span>
-<span class="hljs-attr">  enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">  type:</span> <span class="hljs-string">versus</span>
-<span class="hljs-attr">  onStart:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">pvpOn]</span>
-<span class="hljs-attr">  onComplete:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[teleportOut]</span>
-<span class="hljs-attr">  winner:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
+  <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-attr">type:</span> <span class="hljs-string">versus</span>
+  <span class="hljs-attr">onStart:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">pvpOn]</span>
+  <span class="hljs-attr">onComplete:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportOut]</span>
+  <span class="hljs-attr">winner:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
 </code></pre>
 <p>After changing, adding in <code>wgNoLeave</code> and <code>wgClearRegion</code></p>
 <pre><code class="hljs css language-yaml"><span class="hljs-comment">### Skirmish</span>
 <span class="hljs-attr">skirmish:</span>
-<span class="hljs-attr">  enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">  type:</span> <span class="hljs-string">versus</span>
-<span class="hljs-attr">  onStart:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">pvpOn,</span> <span class="hljs-string">wgNoLeave]</span>
-<span class="hljs-attr">  onComplete:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[teleportOut]</span>
-<span class="hljs-attr">  onFinish:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[wgClearRegion]</span>
-<span class="hljs-attr">  winner:</span>
-<span class="hljs-attr">      options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
+  <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>
+  <span class="hljs-attr">type:</span> <span class="hljs-string">versus</span>
+  <span class="hljs-attr">onStart:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">pvpOn,</span> <span class="hljs-string">wgNoLeave]</span>
+  <span class="hljs-attr">onComplete:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportOut]</span>
+  <span class="hljs-attr">onFinish:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[wgClearRegion]</span>
+  <span class="hljs-attr">winner:</span>
+      <span class="hljs-attr">options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
 </code></pre></li>
 </ul>
 <h1><a class="anchor" aria-hidden="true" id="resetting-an-arena"></a><a href="#resetting-an-arena" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resetting an arena</h1>
@@ -105,12 +105,12 @@
 </ol>
 <pre><code class="hljs css language-yaml"><span class="hljs-comment">### Skirmish</span>
 <span class="hljs-attr">skirmish:</span>
-<span class="hljs-attr"> onOpen:</span>
-<span class="hljs-attr">     options:</span> <span class="hljs-string">[wgResetRegion]</span>
-<span class="hljs-attr"> onComplete:</span>
-<span class="hljs-attr">     options:</span> <span class="hljs-string">[teleportOut]</span>
-<span class="hljs-attr"> onFinish:</span>
-<span class="hljs-attr">     options:</span> <span class="hljs-string">[wgResetRegion]</span>
+ <span class="hljs-attr">onOpen:</span>
+     <span class="hljs-attr">options:</span> <span class="hljs-string">[wgResetRegion]</span>
+ <span class="hljs-attr">onComplete:</span>
+     <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportOut]</span>
+ <span class="hljs-attr">onFinish:</span>
+     <span class="hljs-attr">options:</span> <span class="hljs-string">[wgResetRegion]</span>
 </code></pre>
 <h2><a class="anchor" aria-hidden="true" id="valid-options"></a><a href="#valid-options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Valid Options</h2>
 <p>More options will be added as requested</p>

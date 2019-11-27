@@ -4,7 +4,7 @@
             {"zIndex":100}
           )
         });
-        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/header.png" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://battleplugins.org/blog" target="_self">Blog</a></li><li class=""><a href="https://battleplugins.org/get" target="_self">Get</a></li><li class=""><a href="/index" target="_self">Docs NEW</a></li><li class=""><a href="/docs/" target="_self">Docs</a></li><li class=""><a href="https://battleplugins.org/team" target="_self">Team</a></li><li class=""><a href="https://github.com/battleplugins" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/BattlePlugins/BattleDocs/tree/master/docs/ba/config/options.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Options</h1></header><article><div><span><p>= Options = BattleArena gives you many options for things like adding colored armor for teams, clearing inventory on match start, setting requirements to join a game, and many more.</p>
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/header.png" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="https://battleplugins.org/blog" target="_self">Blog</a></li><li class=""><a href="https://battleplugins.org/get" target="_self">Get</a></li><li class=""><a href="/index" target="_self">Docs NEW</a></li><li class=""><a href="/docs/" target="_self">Docs</a></li><li class=""><a href="https://battleplugins.org/team" target="_self">Team</a></li><li class=""><a href="https://github.com/battleplugins" target="_self">GitHub</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/BattlePlugins/BattleDocs/tree/master/docs/ba/config/options.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Options</h1></header><article><div><span><p>= Options = BattleArena gives you many options for things like adding colored armor for teams, clearing inventory on match start, setting requirements to join a game, and many more.</p>
 <p>== Place anywhere Options == Options that you can place in any stage and that will last the entire match</p>
 <ul>
 <li>armorTeams : Use colored armor for teams</li>
@@ -35,18 +35,18 @@
 </code></pre>
 <p>An example that will require players to bring in their own equipment that will charge them 10 money. They will also have to have at least a diamond sword and a bow with 16 arrows. They will take whatever they get from the loser. Notice that 'needItems' and 'takeItems' are simultaneously 'options:' that can be activated, but also require a separate list of values too.</p>
 <pre><code class="hljs"><span class="hljs-attr">skirmish:</span>
-<span class="hljs-attr">    preReqs:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[money=10,</span> <span class="hljs-string">levelRange=2-10,</span> <span class="hljs-string">needItems,</span> <span class="hljs-string">takeItems]</span>
-<span class="hljs-attr">        needItems:</span>
-<span class="hljs-attr">            - diamond_sword:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - bow:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">            - arrow:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">        takeItems:</span>
-<span class="hljs-attr">            - gold_ingot:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">    onEnter:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[]</span>
-<span class="hljs-attr">    onLeave:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">preReqs:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[money=10,</span> <span class="hljs-string">levelRange=2-10,</span> <span class="hljs-string">needItems,</span> <span class="hljs-string">takeItems]</span>
+        <span class="hljs-attr">needItems:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">diamond_sword:</span> <span class="hljs-number">1</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">bow:</span> <span class="hljs-number">1</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">arrow:</span> <span class="hljs-number">1</span>
+        <span class="hljs-attr">takeItems:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">gold_ingot:</span> <span class="hljs-number">1</span>
+    <span class="hljs-attr">onEnter:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">onLeave:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 </code></pre>
 <p>== Normal Options == valid options for all stages (excluding preReqs)</p>
 <ul>
@@ -86,12 +86,12 @@
 <li>flightSpeed=<float> : set the players flight speed</li>
 </ul>
 <p>=== Examples ===</p>
-<pre><code class="hljs"><span class="hljs-attr">Skirmish:</span>
-<span class="hljs-attr">    onEnter:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[health=3]</span>
-<span class="hljs-attr">    doCommands:</span>
-<span class="hljs-bullet">        -</span> <span class="hljs-string">console</span> <span class="hljs-string">deop</span> <span class="hljs-string">player</span> <span class="hljs-comment"># will run the command 'deop player' from the console, where player becomes the player name</span>
-<span class="hljs-bullet">        -</span> <span class="hljs-string">player</span> <span class="hljs-string">fly</span> <span class="hljs-string">off</span> <span class="hljs-comment"># will run the command 'fly off' as the player</span>
+<pre><code class="hljs">Skirmish:
+    onEnter:
+        options: [<span class="hljs-attribute">health</span>=3]
+    doCommands:
+        -<span class="hljs-built_in"> console </span>deop player # will <span class="hljs-builtin-name">run</span> the command <span class="hljs-string">'deop player'</span> <span class="hljs-keyword">from</span> the console, where player becomes the player name
+        - player fly off # will <span class="hljs-builtin-name">run</span> the command <span class="hljs-string">'fly off'</span> as the player
 </code></pre>
 <p>== onDeath or Normal Options ==</p>
 <ul>

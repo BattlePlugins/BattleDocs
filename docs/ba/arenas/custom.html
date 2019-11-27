@@ -60,7 +60,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/BattlePlugins/BattleDocs/tree/master/docs/ba/arenas/custom.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Custom Arena Modes</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="creating-custom-arenas"></a><a href="#creating-custom-arenas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating Custom Arenas</h1>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/BattlePlugins/BattleDocs/tree/master/docs/ba/arenas/custom.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Custom Arena Modes</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="creating-custom-arenas"></a><a href="#creating-custom-arenas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating Custom Arenas</h1>
 <p>You can create your own custom matches and events with separate names, commands, messages, and options. To do this you will have to make a new config file with the properties you will want. The important thing is that the name of the config file and the configuration section be named the same thing. For example if you have a SuperArenaConfig.yml, then the inside should look like. Notice the config name and the configuration section match.</p>
 <h2><a class="anchor" aria-hidden="true" id="example-1"></a><a href="#example-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example 1</h2>
 <p>Example creating a new Paintball match called SuperPaintball.</p>
@@ -69,44 +69,44 @@
 <li>Now open up SuperPaintballConfig.yml and edit it to look like the following:</li>
 </ol>
 <pre><code class="hljs css language-yaml configVersion: 2.0"><span class="hljs-attr">SuperPaintball:</span> 
-<span class="hljs-attr">  enabled:</span> <span class="hljs-literal">true</span> 
-<span class="hljs-attr">  database:</span> <span class="hljs-string">SuperPaintball</span> <span class="hljs-comment"># or delete if you dont want wins/losses/top, needs BattleTracker </span>
-<span class="hljs-attr">  arenaClass:</span> <span class="hljs-string">Paintball</span> <span class="hljs-comment">## needs to be Paintball, (giving this match the abilities of a normal paintball) </span>
-<span class="hljs-attr">  rated:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># if database is enabled </span>
-<span class="hljs-attr">  prefix:</span> <span class="hljs-string">"&amp;f[SuperPaintball]&amp;e"</span> 
-<span class="hljs-attr">  joinType:</span> <span class="hljs-string">Queue</span> 
-<span class="hljs-attr">  victoryCondition:</span> <span class="hljs-string">LastManStanding</span> 
-<span class="hljs-attr">  nTeams:</span> <span class="hljs-number">2</span><span class="hljs-string">+</span> 
-<span class="hljs-attr">  teamSize:</span> <span class="hljs-number">1</span> 
-<span class="hljs-attr">  cmd:</span> <span class="hljs-string">spb</span> <span class="hljs-comment">#what they will have to type to join in this case /spb join</span>
+  <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span> 
+  <span class="hljs-attr">database:</span> <span class="hljs-string">SuperPaintball</span> <span class="hljs-comment"># or delete if you dont want wins/losses/top, needs BattleTracker </span>
+  <span class="hljs-attr">arenaClass:</span> <span class="hljs-string">Paintball</span> <span class="hljs-comment">## needs to be Paintball, (giving this match the abilities of a normal paintball) </span>
+  <span class="hljs-attr">rated:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># if database is enabled </span>
+  <span class="hljs-attr">prefix:</span> <span class="hljs-string">"&amp;f[SuperPaintball]&amp;e"</span> 
+  <span class="hljs-attr">joinType:</span> <span class="hljs-string">Queue</span> 
+  <span class="hljs-attr">victoryCondition:</span> <span class="hljs-string">LastManStanding</span> 
+  <span class="hljs-attr">nTeams:</span> <span class="hljs-number">2</span><span class="hljs-string">+</span> 
+  <span class="hljs-attr">teamSize:</span> <span class="hljs-number">1</span> 
+  <span class="hljs-attr">cmd:</span> <span class="hljs-string">spb</span> <span class="hljs-comment">#what they will have to type to join in this case /spb join</span>
 <span class="hljs-comment">### You can delete any stages/transitions that have no options</span>
 <span class="hljs-comment">### for a list of options see wiki</span>
 <span class="hljs-attr">defaults:</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 <span class="hljs-attr">preReqs:</span> <span class="hljs-comment">## Prerequisites for joining</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 <span class="hljs-attr">onEnter:</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[storeAll]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[storeAll]</span>
 <span class="hljs-attr">onLeave:</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[restoreAll]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[restoreAll]</span>
 <span class="hljs-attr">onJoin:</span>  <span class="hljs-comment">## when they join the match</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 <span class="hljs-attr">onPreStart:</span> <span class="hljs-comment">## x seconds before onStart</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 <span class="hljs-attr">onStart:</span> <span class="hljs-comment">## Starting</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">pvpOn]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">pvpOn]</span>
 <span class="hljs-attr">onSpawn:</span> <span class="hljs-comment">## what happens when a player spawns</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[giveItems,</span> <span class="hljs-string">hunger=20,</span> <span class="hljs-string">health=20]</span>
-<span class="hljs-attr">    items:</span>
-<span class="hljs-attr">        - snowball:</span> <span class="hljs-number">128</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[giveItems,</span> <span class="hljs-string">hunger=20,</span> <span class="hljs-string">health=20]</span>
+    <span class="hljs-attr">items:</span>
+        <span class="hljs-bullet">-</span> <span class="hljs-attr">snowball:</span> <span class="hljs-number">128</span>
 <span class="hljs-attr">onDeath:</span> <span class="hljs-comment">## what happens when a player dies</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 <span class="hljs-attr">onComplete:</span> <span class="hljs-comment">## what happens when things end</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[teleportOut,</span> <span class="hljs-string">clearInventory]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportOut,</span> <span class="hljs-string">clearInventory]</span>
 <span class="hljs-attr">winner:</span> <span class="hljs-comment">## what to give the winner</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
 <span class="hljs-attr">losers:</span> <span class="hljs-comment">## what to give the losers</span>
-<span class="hljs-attr">    options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
 </code></pre>
 <p>The important lines are switching over places that have Paintball to SuperPaintball and adding the two lines, arenaType and arenaClass.</p>
 <p><code>arenaType</code> specifies what type of arenas this new competition will use. If you specify spleef, it would use spleef arenas, if you specify battleground, it will use battleground arenas. Normally you will want to set this to whatever your custom competition is, in this case &quot;SuperPaintball&quot;.</p>
@@ -123,40 +123,40 @@
 <span class="hljs-comment">## Change this file to customize your event</span>
 
 <span class="hljs-attr">EPaintball:</span>
-<span class="hljs-attr">    enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">    command:</span> <span class="hljs-string">epb</span>
-<span class="hljs-attr">    arenaClass:</span> <span class="hljs-string">Paintball</span> <span class="hljs-comment">## needs to be Paintball, (giving this match the abilities of a normal paintball)</span>
-<span class="hljs-attr">    database:</span> <span class="hljs-string">ePaintball</span> <span class="hljs-comment"># or delete if you dont want wins/losses/top, needs BattleTracker</span>
-<span class="hljs-attr">    prefix:</span> <span class="hljs-string">"&amp;a[ePaintball]&amp;e"</span>
-<span class="hljs-attr">    joinType:</span> <span class="hljs-string">JoinPhase</span>
-<span class="hljs-attr">    victoryCondition:</span> <span class="hljs-string">LastManStanding</span>
-<span class="hljs-attr">    nTeams:</span> <span class="hljs-number">2</span><span class="hljs-string">+</span>
-<span class="hljs-attr">    teamSize:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">    matchTime:</span> <span class="hljs-number">300</span>
-<span class="hljs-attr">    preReqs:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[]</span>
-<span class="hljs-attr">    onEnter:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[storeAll]</span>
-<span class="hljs-attr">    onLeave:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[restoreAll]</span>
-<span class="hljs-attr">    onJoin:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">woolTeams,</span> <span class="hljs-string">pvpOff]</span>
-<span class="hljs-attr">    onPrestart:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[pvpOff]</span>
-<span class="hljs-attr">    onStart:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[pvpOn]</span>
-<span class="hljs-attr">    onComplete:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[teleportOut]</span>
-<span class="hljs-attr">    onDeath:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[randomRespawn,</span> <span class="hljs-string">clearInventory]</span>
-<span class="hljs-attr">    onSpawn:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[enchants,</span> <span class="hljs-string">giveItems,</span> <span class="hljs-string">health=20,</span> <span class="hljs-string">hunger=20,</span> <span class="hljs-string">deEnchant,</span> <span class="hljs-string">invulnerable=2]</span>
-<span class="hljs-attr">        items:</span>
-<span class="hljs-attr">            - snow_ball:</span> <span class="hljs-number">128</span>
-<span class="hljs-attr">    winner:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
-<span class="hljs-attr">    losers:</span>
-<span class="hljs-attr">        options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
+    <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span>
+    <span class="hljs-attr">command:</span> <span class="hljs-string">epb</span>
+    <span class="hljs-attr">arenaClass:</span> <span class="hljs-string">Paintball</span> <span class="hljs-comment">## needs to be Paintball, (giving this match the abilities of a normal paintball)</span>
+    <span class="hljs-attr">database:</span> <span class="hljs-string">ePaintball</span> <span class="hljs-comment"># or delete if you dont want wins/losses/top, needs BattleTracker</span>
+    <span class="hljs-attr">prefix:</span> <span class="hljs-string">"&amp;a[ePaintball]&amp;e"</span>
+    <span class="hljs-attr">joinType:</span> <span class="hljs-string">JoinPhase</span>
+    <span class="hljs-attr">victoryCondition:</span> <span class="hljs-string">LastManStanding</span>
+    <span class="hljs-attr">nTeams:</span> <span class="hljs-number">2</span><span class="hljs-string">+</span>
+    <span class="hljs-attr">teamSize:</span> <span class="hljs-number">1</span>
+    <span class="hljs-attr">matchTime:</span> <span class="hljs-number">300</span>
+    <span class="hljs-attr">preReqs:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[]</span>
+    <span class="hljs-attr">onEnter:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[storeAll]</span>
+    <span class="hljs-attr">onLeave:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[restoreAll]</span>
+    <span class="hljs-attr">onJoin:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportIn,</span> <span class="hljs-string">woolTeams,</span> <span class="hljs-string">pvpOff]</span>
+    <span class="hljs-attr">onPrestart:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[pvpOff]</span>
+    <span class="hljs-attr">onStart:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[pvpOn]</span>
+    <span class="hljs-attr">onComplete:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[teleportOut]</span>
+    <span class="hljs-attr">onDeath:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[randomRespawn,</span> <span class="hljs-string">clearInventory]</span>
+    <span class="hljs-attr">onSpawn:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[enchants,</span> <span class="hljs-string">giveItems,</span> <span class="hljs-string">health=20,</span> <span class="hljs-string">hunger=20,</span> <span class="hljs-string">deEnchant,</span> <span class="hljs-string">invulnerable=2]</span>
+        <span class="hljs-attr">items:</span>
+            <span class="hljs-bullet">-</span> <span class="hljs-attr">snow_ball:</span> <span class="hljs-number">128</span>
+    <span class="hljs-attr">winner:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
+    <span class="hljs-attr">losers:</span>
+        <span class="hljs-attr">options:</span> <span class="hljs-string">[health=20,</span> <span class="hljs-string">hunger=20]</span>
 </code></pre>
 <p>The important lines are switching over places that have Paintball to SuperPaintball and adding the two lines, arenaType and arenaClass.</p>
 <p><code>arenaType</code> specifies what type of arenas this new competition will use. If you specify spleef, it would use spleef arenas, if you specify battleground, it will use battleground arenas. Normally you will want to set this to whatever your custom competition is, in this case &quot;SuperPaintball&quot;.</p>
