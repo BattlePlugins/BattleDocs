@@ -41,6 +41,10 @@ BattleArena features a complete Event system for Minecraft.
 
 We've been featured in the following YouTube videos and reviews:
 
+**Tutorial by Barbercraft:**
+
+[![barbercraft](https://img.youtube.com/vi/XWiogstn_Q8/0.jpg)](https://www.youtube.com/watch?v=XWiogstn_Q8)
+
 **Tutorial by LtJim007:**
 
 [![ltjim007](https://img.youtube.com/vi/dR0tmySt5ac/0.jpg)](https://www.youtube.com/watch?v=dR0tmySt5ac)
